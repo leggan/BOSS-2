@@ -2,132 +2,63 @@
 <html lang="sv">
   <head>
     <!-- SEO -->
-    <title>BOSS Båt & Städservice Svea | Uppsala Län</title>
-    <meta charset="UTF-8" />
+    <title>Kontakta oss | Båt & Städservice</title>    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
       content="Professionell båtservice och städservice. Begär en kostnadsfri offert idag."
     />
-    <meta property="og:title" content="BOSS Båt & Städservice">
-    <meta property="og:description" content="Professionell båtvård och städservice i Uppsala Län.">
-    <meta property="og:image" content="https://batochstadservicesvea.se/img/hero.avif">
-    <meta property="og:url" content="https://batochstadservicesvea.se">
-    <meta property="og:type" content="website">
     <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "@id": "ubiquitous-trifle-5bc0f9.netlify.app/#business",
-        "name": "BOSS Båt & Städservice",
-        "url": "https://ubiquitous-trifle-5bc0f9.netlify.app/",
-        "logo": "https://ubiquitous-trifle-5bc0f9.netlify.app/img/logo.svg",
-        "image": "https://ubiquitous-trifle-5bc0f9.netlify.app/img/hero.avif",
-        "telephone": "+46766022544",
-        "email": "batochstadservicesvea@gmail.com",
-        "description": "BOSS Båt & Städservice erbjuder professionell båtvård och städservice i Uppsala Län.",
-        "priceRange": "$$",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Tillinge Öndesta 1",
-          "postalCode": "745 94",
-          "addressLocality": "Enköping",
-          "addressRegion": "Uppsala Län",
-          "addressCountry": "SE"
-        },
-        "areaServed": {
-          "@type": "AdministrativeArea",
-          "name": "Uppsala Län"
-        },
-        "hasOfferCatalog": {
-          "@type": "OfferCatalog",
-
-          "name": "Tjänster",
-
-          "itemListElement": [
-            {
-              "@type": "Offer",
-
-              "itemOffered": {
-                "@type": "Service",
-
-                "name": "Båtvård"
-              }
-            },
-
-            {
-              "@type": "Offer",
-
-              "itemOffered": {
-                "@type": "Service",
-
-                "name": "Städservice"
-              }
-            }
-          ]
-        },
-        "knowsAbout": [
-          "Båtvård",
-
-          "Polering",
-
-          "Rekonditionering",
-
-          "Hemstädning",
-
-          "Kontorsstädning"
-        ],
-        "openingHoursSpecification": [
-          {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": [
-              "Monday",
-              "Tuesday",
-              "Wednesday",
-              "Thursday",
-              "Friday"
-            ],
-            "opens": "08:00",
-            "closes": "18:00"
-          },
-          {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": "Saturday",
-            "opens": "09:00",
-            "closes": "15:00"
-          }
-        ]
-      }
-    </script>
+        {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+        
+            "itemListElement": [
+        
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Hem",
+                    "item": "https://batochstadservicesvea.se/"
+                },
+        
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Kontakt",
+                    "item": "https://batochstadservicesvea.se/kontakt.html"
+                }
+        
+            ]
+        }
+        </script>
     <!-- CSS -->
+    
     <link rel="stylesheet" href="/css/output.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.1.0/dist/cookieconsent.css"
+    />
 
     <!-- JS -->
     <script src="/js/main.js" defer></script>
-    <!-- COOKIES -->
-    <link
-      rel="preload"
-      href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.1.0/dist/cookieconsent.css"
-      as="style"
-      onload="this.onload=null;this.rel='stylesheet'"
-    />
-
-    <noscript>
-      <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.1.0/dist/cookieconsent.css"
-      />
-    </noscript>
 
     <script type="module" src="/js/cookieconsent.js"></script>
   </head>
   <body>
-    <header class="relative h-screen flex flex-col">
+    <header class="relative h-[60vh] min-h-[420px] max-h-[600px] flex flex-col">
+      <!-- BAKGRUND -->
       <div
-        class="absolute inset-0 bg-cover bg-center bg-black/80 md:bg-black/95 bg-blend-overlay"
-        style="background-image: url('/img/hero.webp')"
+        class="absolute inset-0 bg-cover bg-center"
+        style="background-image: url('/img/kontakta-hero.avif')"
       ></div>
 
+      <div
+        class="absolute inset-0 bg-[linear-gradient(110deg,rgba(8,18,34,0.88)_0%,rgba(8,18,34,0.6)_100%)]"
+      ></div>
+      <!-- NAVBAR -->
+      <!-- NAVBAR -->
       <nav
         id="navbar"
         class="fixed left-0 top-6 z-50 w-full transition-all duration-500"
@@ -619,15 +550,13 @@
             <ul class="flex flex-col items-center gap-8 font-jost text-3x">
               <li>
                 <a
-                  class="nav-link text-black transition-colors duration-300"
-                  href="/index.html"
+                  class="nav-link text-white transition-colors duration-300"
+                  href="/services.html"
                   >HEM</a
                 >
               </li>
               <li class="text-center pb-3 md:pb-0">
-                <p id="services-link" class="mb-4 font-semibold text-white">
-                  TJÄNSTER
-                </p>
+                <p class="mb-4 font-semibold text-white">TJÄNSTER</p>
 
                 <div class="flex flex-col gap-4">
                   <a
@@ -671,1009 +600,323 @@
           </div>
         </div>
       </nav>
-
-      <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none">
-        <svg
-          class="relative block w-full h-20"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1440 120"
-          preserveAspectRatio="none"
-        >
-          <path
-            fill="#ffffff"
-            d="M0,64L80,74.7C160,85,320,107,480,101.3C640,96,800,64,960,53.3C1120,43,1280,53,1360,58.7L1440,64L1440,120L1360,120C1280,120,1120,120,960,120C800,120,640,120,480,120C320,120,160,120,80,120L0,120Z"
-          />
-        </svg>
-      </div>
       <div
-        class="relative z-0 mx-auto flex w-full max-w-7xl flex-1 items-center md:items-center px-6 pt-12 md:pt-20"
+        class="relative z-10 mx-auto flex h-full w-full max-w-7xl items-end px-6 pb-20"
       >
-        <div class="max-w-2xl text-white">
-          <h1
-            class="text-4xl md:text-6xl font-cormorant font-semibold leading-tight md:leading-15"
+        <div class="max-w-2xl">
+          <p
+            class="font-jost text-xs font-semibold uppercase tracking-[0.35em] text-white/80"
           >
-            Professionell vård av båt <br />och hem
+            Hör av dig
+          </p>
+
+          <h1 class="mt-4 font-cormorant text-6xl text-white md:text-7xl">
+            Kontakta oss
           </h1>
 
-          <p class="mt-6 text-base md:text-lg font-jost text-white/78">
-            Vi levererar förstklassig båtvård och hemstädning med fokus på
-            precision, kvalitet och långsiktiga kundrelationer.
+          <p class="mt-6 max-w-xl font-jost text-lg leading-8 text-white/80">
+            Vi svarar på alla förfrågningar inom 24 timmar.
           </p>
-          <div class="mt-8 flex flex-col gap-4 sm:flex-row w-fit">
-            <a
-              href="#offert"
-              class="mt-4 md:mt-8 inline-block border border-transparent bg-primary px-6 py-3 transition hover:bg-primary/70 font-jost font-semibold"
-            >
-              BEGÄR OFFERT
-            </a>
-            <a
-              href="#offert"
-              class="md:mt-8 md:ml-8 inline-block border border-white px-6 py-3 transition hover:bg-gray-200/20 font-jost font-semibold"
-            >
-              VÅRA TJÄNSTER
-            </a>
-          </div>
-
-          <div
-            class="flex mt-16 md:mt-30 md:border-b md:border-b-white sm:w-fit"
-          >
-            <svg
-              class="h-18 md:h-24"
-              version="1.1"
-              id="svg1"
-              viewBox="0 0 300 180"
-              sodipodi:docname="havsglans.svg"
-              inkscape:version="1.4.4 (dcaf3e7, 2026-05-05)"
-              xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-              xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:svg="http://www.w3.org/2000/svg"
-            >
-              <defs id="defs1" />
-              <sodipodi:namedview
-                id="namedview1"
-                pagecolor="#ffffff"
-                bordercolor="#000000"
-                borderopacity="0.25"
-                inkscape:showpageshadow="2"
-                inkscape:pageopacity="0.0"
-                inkscape:pagecheckerboard="0"
-                inkscape:deskcolor="#d1d1d1"
-                inkscape:zoom="1.1208333"
-                inkscape:cx="192.26766"
-                inkscape:cy="48.178439"
-                inkscape:window-width="958"
-                inkscape:window-height="1000"
-                inkscape:window-x="953"
-                inkscape:window-y="0"
-                inkscape:window-maximized="0"
-                inkscape:current-layer="g1"
-              />
-              <g inkscape:groupmode="layer" inkscape:label="Image" id="g1">
-                <image
-                  width="300"
-                  height="180"
-                  preserveAspectRatio="none"
-                  xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAC0CAYAAAAuPxHvAAAABHNCSVQICAgIfAhkiAAAIABJREFU&#10;eJztnXeYbVV5/z97Zu69lEuTeuHSO5cOgqBir1GjsSSSmNg1pth7YkEsqKBGo1ETNUrUn4oaNSoo&#10;xkoUUJHem4AUuXS4987MWb8/vvs9691rdjtnzsydgf19nv2cmXP2XnvVd719QYcOHTp06NChQ4cO&#10;HTp06NChQ4cOHTp06NChQ4cOHTp06NChQ4cOHTp06NChQ4cOHTp06NChQ4cOHTp06NChQ4cOHTp0&#10;6NChQ4cOHTp06NChQ4cOHTp06NChQ4cOHTp06NChQ4cOHTp06NChQ4cOHTp06NChQ4cOHTp06NCh&#10;Q4cOHTp06NChQwchW+8VyGZXhV6vN6vnQwj9v8fGxmZVVocO8wBbMKH2rvspFgXBmi1Rqno1FAjW&#10;jIrkBMxueEBOkBq0WThZw+9zgfXxzvlEf576zZbqtRyAMFvGYKFgvbeiriMHIFQbA5sAy/O/NwCW&#10;5VegSHQmgXuBO4F7Qwh35v9Pl1WP4gIIi4ELyyeydWz6WfqI/6wbk2SRAFiHlD1kfdpYbsk7Bqm/&#10;h580pQvVtWFJcn9pdSgSwMbFn5RfNq8qy68pu26DrSPQgZLNZbESsPVea99xLQnUjsB+wCrggPz/&#10;7YBtEcFaxsx2heTvDFgL3BNCuAO4EbgauAw4B7gYuAKYcvf7QQ+wcEXIEqLSFhmUT+ZZlDnwIpnF&#10;u6BkTvv3JmUP9aIBCFZbjOHmVU3/L0FzEmI7e8DWwFbAuPv+PuAOYHV+j83jIlu2yAjXeq+tdVgN&#10;sdoaOBp4VP65J7AZ5XUPzNwRqbi3bsdaA1yCCNf3gV8gYlZ274IjXiEEm5grgH1bPLIUuBS4Esha&#10;EKzDgC2p7m+PnyCuttXicHUH2AttSINgHG1GP6WEACTtOBDNryaMAecCN+Xl1Yqdrg1bAQc3lJ0B&#10;t6CNEl/fEsJn5e4IPA04Eo3vjkjC2CC/bxoRtluBa/KyfwZ8D7ibkjFbbIRr3tHr9ej1eoQQyq4H&#10;hRCODSF8PYRwYyiiF0KYDiFMhRAmW1xT+f3TJc+t6/V663q93tperzfZ6/WmekJIrjt7vd6Pe73e&#10;K3u93i69Xi/L6z+WX/b/+u5WQAsm78eX5/1VdxlOzJ8pnblubLIQwgVuLJqu3aw+A9adEMKpYTis&#10;CSHsaOVUtIMQwkkDlPkm3wct2/CylmV/PYQwHkJYEkIYL6mnXQ8NIZwcQlidP9em/229hBDC1SGE&#10;94QQVubljfvyFwMm5vuFFR0zjnaFQ4AXA89A3IGxspP5fVn+3Xh+Bff9UEh2ll5ej7SSy4FH5Nc7&#10;gNOBzwHfyX8fy+sQQt7A9bxj2U48nf89Tayjh/XtEop93KQTWZP/3Ssp08N0g6XiSEPdx4G9WzyT&#10;vt/asx/w+4Znz3V16xH1cWXl7d5QFjBjfu+alz+Vl22in9V5EnG35+D0iK6MifzZjYGTgJf6V7Wp&#10;Tw7r052ANwMvAV4DfCH5fcFj3glWBR4DvBJ4svvO2FYjUH4yTVNchFPAR4BrERtsinQrYyq/byli&#10;m5cjdn1LYCWwPZqQu+T32AQ2lskI5xhivZ8J/BnwO+ATiHhNEheazbreA4DVrmvgbBq/OxqjYTCG&#10;IzAhhP4GkmWZJyqXDVDHlUPUY7f8M3OX/e8J1wWUi9ZTwDbAacBBxDk/G0yhef85YA/g7fZe308L&#10;FfNCsGrYzccDb0L6KYPt9BNEQhWQXuJc4AdIdn+0e+Zm4HVDVi/L37EU6TMOAB6M9GWHA5sTCZjn&#10;WDKkn/g34LXA+4CT8/r3d9J8EqwP0/58PTtqgmXP7Ik4i0H7zp7fl3rOIUM6uzVE3U9debsQOdE2&#10;HElGJFieu/WfY2guXebK8+UuB36EDEzr8vfPFuOuTm8D7gE+SL45L3Sitb40xXsBXwNOJRKrKTR4&#10;42hgAuKSTgVegQbtYcBbgTPzZ4y4jSPCYn8Pchkxug9xaP8DHI+I6X7AsYh1/mN+/wSx34wL2wP4&#10;DPB/wJOIHNk4IlqtdTgPZCR9tNeQxdhq27/FfaaUbrqvhzisbVq+PwCbEg0Gnrsqq8P1zBQXQfNu&#10;FdqsR0GsPIyjOwE4pqJ+Cw5zRrASZZ4RhnHgXYgFfiZR5DP3AeOoLkKEaT8kJn4K7YZGoDZKX0fc&#10;mXpZlvWyLJtuc7nnxtxlHNRNwJeBv0Gc14uQ/sp+tzpPoR3wMOC7wBeRmDnlyu6IVjM859JEcJrK&#10;2BNxKHX3rUNzsQ5GSJbTzmJp9d8JWbNTIuTvy5A7zZ3Ezc+ePxZZAk3PNZf4sK/nQp6nc0KwXINt&#10;Z5lG4tVZSOk3gSaLTa4JNFg/AZ6DzM3vRxyPsc52+bJnjSzLQn4ZoUtNffbem5Hc/3i0I/2AaCxY&#10;inbAdXl7/gLpt55LJIATsLAnwwKBddABQz5vBGY76gmMzZ8rG8rzRHTXFvdO5J87oXlRNuB+g72a&#10;qJS335YiVckYc6u2MYbhILTuFvzkHDnBShakDcxrgDOQFTD1/B0Dfo44rkcCX0UDaLuN6Y6mS56d&#10;EzgiFnL9k1nDbJKfhfxZyOtkRG7C/b0V0ml9GuliTPfRcVrVMOKwBc3EwVBFEEBWxpkvkY7GxvOy&#10;sntKypumnaXQ2rCSKE6m9Qru+0uI3I2tx0cjgj1JM/zcvA2JmLcSpYCmulo9XuC+W7AYKcFyC9Es&#10;bRsC/4WUehNoYJa4e64G/hp4ONIdFZBlWf9ajzCi1Rc5gSciK6G1Z4xIkMaTe58HnI10EX1r0WLy&#10;fVkP2APpgGbTQeNIpQCUcrY2ppcMUOZONeXZd0ZkjOA2cVjnue9sQ3461aJkinHE7T8ZidF7IWL3&#10;DGRdbPN8AB4K7NzynesNo+awMqJotAtSjj8XDWKP4o7xUWRlO3lGIeufSBXgJqf98Qb3v3F+L0PE&#10;6V7Ur1Punj2BXxIV8n2rUUe0CrDO2JNqcWoQHNTiXZchS5lxG2XvtI3GrH5t6mURBmUinRmWQCFg&#10;HsuAo9x9dciAzyM1xfeBPyAu60bkI/gEZNxqWkwBuevU9deCwMgIVu79O4GI0mFIBNw//98c4JYi&#10;vdQTgFchsarQmQuJUCWwyfM0ZK30YuCvkX7rvxAndSrqW2+JXA58CzntTbvfOxGR/vwB9ctezI5Y&#10;WVl71L0y/7wZuCr/u84RNkMi4VL3f9k77e8ykdbuMQ7LLIQe2yCC3QZ3AW/J/64ibm9Em2gdrC+a&#10;wojWO2ZNsHLRxhbfJJK/f4KUnkaszM/pFKTH+iFRjg+w8LgqgzmuE9n1t1CcnFPINJyh3fFqJDK+&#10;k+IENUvop5DfFjjv6qZwjwcIbE7sz2gIljkFV73LuKqrqOdCjMPajhhDWYdN3XvLyjXCeC2KI/TY&#10;GalSfD2rcBaR4E1B6YZ/NdpQ28yvPpFdqJvorAhWvsjMijaFiNVpRCWzf8c7gGchlrWv61mohKoC&#10;f46cSte5784AvkEkSqA2Hwf8KXA7RQtnD+n0Xk/caRdO5PTCgOn7yowsAYk8Z1PcEDyMEG1FFOPK&#10;yrHnr6q4Jy1vA6LivW7S7oaIVpWIadz5ZRSV8iAOq4la2O+X4pT1eVB2Zp/ut4uT56qwbcPv6x1D&#10;L5ScAttim0Jy93eInBZEOf1YIsfRD6dZ6ISqRHf1RmIbrO3vI05+T3wyJAIeg2LazL3B8F4UjrQw&#10;IqYXDrYnLpwyMcf8437YUI5xMaXWRjf3AnJBsbKbFvUu7t4qrKDd2rq45LvNkv+z5IJYx3tavGc6&#10;v8/nJkvFVyOsc+3vNWsMRbASdnEaydz/jXYgT6zuQfqqL7n3jbEIiJWDLZq/RP5hFnpj1pnv578b&#10;EfO5h8aAC1Eo0QVoQljqjx5y2DMHWh7AHvF+MuzNzEWb4ibkCtMGfb1MhaUQoqWwaj14QrGb/e/E&#10;+Mxt4BnSnWXJsx72notKfmszAeyeDWjn6mMRJLahevcK72Kx4BflKESRDRAnsSVRJDJi9VSiadUW&#10;/vRiIFZucttgmyOf3/VPxHFXzg3DJkEP6fBuRAHe51MM7QF5xT+Y6DX/gCNaSXubMjRkwHVIHGqD&#10;JgfUgPQ8Zils6vzdG+4J+T11a8ukkstLfksV5HVGgJ0b3mP3eTcb+85LO+bs2mSVXO8YmGCVLKYv&#10;IauOUXoTA58J/Dj/exwgD4eZq9U4V+WOIXeFVRTZ6VMRMbZBLrzfOSeaF/PNiNu8gtjvFnbxNSQG&#10;FVweHqDYl6IvWxkuQ8rmm4gLskyPBRIJ01Cu9L5bENGi4b0QRcK68nZrKMecPFOFOyhMpy0OxCno&#10;KzY60wVOo5jE+1DA95r873uRTrZHTBu0YDEQwSrpkDcDT0GNXUJ0DsX9naH4vrlkG/wCL5u8s8EG&#10;RN2VJ1jvzT+nARLnUtx3tqsFItG63ZU3hUJI/j2/rwf9nEgPJMJlc/GwFvdejRbfzTSP9wqaU8Os&#10;oxiiU1fermhOpPd4MasqcNvX9dr8SnFlw/uNE5pCjqy2/oxLKnvnCYiIHoQssKvctR/iavdEao8F&#10;jdmIhEcA7yHuhqbkNE7LlOwBLcCmZG+zxciIVEKYX4gG1IdA/Ddy3fDxX6XIOS0jdFNoQj4l/3kp&#10;MR7xKcg3DSv3ASIa2pzoIcvaDiW/eaxD3FWPmGmhqqMC4kDSvFT6p2hNu8LdU1XHADwIbTAh+c0+&#10;VyD1SOFdCcyVwlWjP0duQAS5ygJq7zKi9RqiiNk34CRql9uR4eeq5LoaEc3r8v9XV7xvwWBYgrUE&#10;+Cwxzs+U6SbSBOBQ5AawqJAQieXIZ8pG3/rrhPyzR5xwlXDcl020XwB/b6/Mv+shi+MqitkpHyjI&#10;KFoIq+65g+h7dD7VhMGPmYXoTITiAHur7kXJ91XYmCLBMphqYAUivFX1tzVSpnAHiWln1LzflzWO&#10;GId/zL+bGEXI10J2NWpFsEo6wVK/2ICPEVNkGOHKkMg47spJTaoLGRlK17wz2tWtr74E/Mrd12p2&#10;uElgSvyPI4U7xP5agjKY9jeBBwiXBeqDvSkXt3Df3YpCUKBcaZ0+E5CuB6JRqOw+IyBN83Oacj2W&#10;PbeSomqk7F0QXSk8l24Syvdqnk/faX59RxEz6/YT8Q1zLWQMw2HtS4yl8yb8PyUGMBtruj9RLvYW&#10;iAXZKwlx2BRlMe075iEl+Yn539KqDzbA3l8L4O8o+mhNorCf5+Mm33yj7ACEuXyXw95Ut9lu/D2R&#10;8JjjZVM/7UW1BczKvZrmEBaIvl19sT1Jp5RmdEj1q0aUrnDfedUBwDdRO9uMvzEJX0fuFIGYysgI&#10;9qDXgsUwBOt4or+VdeiHkUXw4/n/JuKAPLr7uq2weFiGVyB9is/t/l+4MIchdyPT940h8ebV+ffe&#10;G/7tyLIVYN51WW2ytI4MSR9a8G0dh3UxkZjfgOLpal+BdFhbuv/Lyr2Vet2R11X1CVZSTiCmtKka&#10;tDGUvfYWd1/6znuBj7n/6yaAbXbbIWfanYkhcQuSMZgNBiVYj0JpVUyxPoEG+e15WachLsvKnUZc&#10;1stKylpQnZkQha2JeoGAlOOTSMcEDE2svLuDcQbfRGKm9dk6NOlew/x4wds7zP1iHcX8Y2WXhSbN&#10;egxdv48B+1C9OK3PLidyqdehhV/mP5W577dF+rG6hX8v0bWhDsZFpacrWf6pXWueNeJ0I9LDFVwy&#10;3NwwlYG1tak8iy7ZGTnU7pf/v+iO8WpCYzbDpKE+/s2efRfKumBZRN8N/AnRIQ20+D5DfrJMCCE0&#10;aqrXL/4BxaF5ncdnkbPirJXhWZaF3EvaiNY7kJOtT+n7j2jSroaok5gDWNLBpyCFcZvwjGHzrVch&#10;IA5hhfuuykR/af65DPkN3UAUhcrut3L2wB1WmsA2izTVS1Vdd3Lv999PUMxyWsXNpe9JXWYsnObV&#10;SNRryudu+s9pRJjPQHG7hfClhX7AxKwR4sGZWQjhISHCDiL9vxJ9RxZC+FbQ4Y29EMK6/O9XBx3c&#10;aJ7cdWbfqrrY9eG8HmvzzxtDCJsMu5O4csdDCNuGeFDlZP65JoSwu+sLbw4fCiX9dmL+rinXz2/M&#10;f1sySLtCPCDzJa5Mf2iqoe1BnFUHsE6HetwTQtg51B/QmoUQxoIOCfUH3pYdBnpfCGFVXt7S/PPj&#10;oXhYqG+blRNCCMdX1MPen+X9VXbIrC8vhBDuDCHsFeJ8t+d3CiHc0lCfEEJ4Z4hZTsDNI/s+xHnx&#10;gfyZdWUdnMO/y9bEZNBBuvOmj5wPtBUJM6TTgah/mUDWiRQBZSrwZY8hjmEjohVjIfbcNApI3pxi&#10;Ar5P43bFUexSziJjOqGPIJ2W1/89H/kRTcL91i/LdHp14SzGfaxG4pR9B9FSmCqMU73Qqn5h1al8&#10;LiKKelU6LNA83rmkjiuoP3jCvisLetYNmhP+UNfXo6O+jBMumwRmmQdxyFP5/R8n6pWNC1vU86gN&#10;wQrIVPvU/G+T1X+N8lt5mEXtN0gvY/+bKfiltLPqzBuSwdsR+Fti/SaQuHsic5cCZhpNpGuRm4NV&#10;qId0Ok+ao/eOAqMaxzGi60Hdu25CTpBQFK/a1GMvinmmUgRkmVtD/Vjbwb47lfy2PdXiW5mFsK7e&#10;nmg9G6VS9oQphVdV+LMFXo7cJGzjM6K1YNbgIKgcmGQhPwNxHeZ3lSGdVB8u6Nc6zpwrvfLzNeiA&#10;AXvHQiP1ryGeb2j4NCImXjE6atjk/DfiaUJm2PhrFhCBHyXc8PeIfn2lt+bXFfmnjzW8BjlbNimn&#10;tyeeK1jF/dzEzAygKcyjvMxSaLq0Jj+ym5LvihWJc8xCbm5DOdsvJUZGlD7qyvSGryeiMzN3o0i0&#10;KopZuGjLNRybf9pkuRWdbpPCFlpAO8Jn8+/tZJntkWhohG0hYQ+UvhgiAVkNnMQc+abkE8Y2gB46&#10;2fpi4kQFJUUc5pj0xYQNEQEwjryKoNiR7h6/R07LZcYQLxZuQvFg0zKsoRjLVzbutgFbuJYnEHu5&#10;squMBjfRHFLkidYUWnM3oLlwLkW1QVn9fLmWnnx/FGFxGM6YtNiIVhuisQqF2fhB/Dai+pbp0O4N&#10;Ti9jXNY6iv47r0AWof7R2OsDiQIyQ9zVxvn/JrZ+Erfjjoq7St5tE2pzZBHan+Ki3QSJhab7G0kd&#10;Fhh2YKZOyGAci4+/s+9Bm+fNDeXbRruq4jePumO//ATYJfnN9HBlZVobMrQh2bqpHcwaonUWxYNO&#10;yurpyzZR0ny1LMB80XFapQQracAxFFnwgNKhmGJvxuOu7EvQ4Qymx1qH2PK/Y5ZWthFjLxTkbJzg&#10;GNoJP8bsnERnoGRyrEPe7ecg0buMw3g8c8TlLRDsjrisOmfLQHkmg4z2YTUH2vN+HJKxvYCiGiOF&#10;/bYD2kwME8jfq46IkNe19WZdQrRuA45G/nsWAF1VT0M/cSbaGE8l+motqo2wDYdlSl9TNt6MnNPG&#10;gHVlCzk/Pdl++CByyht335kX+XohWCWD82rkV2Os9hjirm6Y4/eCUtf8BHEYayn33XkIkfsbNRbC&#10;TDXv8LrsmfcSTwKHmRvjdPI9FPsyUM5heYwTLXjpe+xvE983pegkuhJxMHUe5sGX33YTdPeZumUK&#10;5Zs7EZcYs+xRiv1kROtBKFvuNjV1XZBochzdHKWY9Q3/ObKc1U30kGXZVL5Ar0KK61fab6jDXosI&#10;xUQIYX2mTD6Iou5qAnFXH86/C7OtW0KoTATcGp2g81Qiy152Fp/t5ocCP5tVRSqql7/jF2jXbkMY&#10;X0z9MfDNLy32yeH5Z5Wjpbk0/N6+z7LMyphGYlyVzsjrlHZFDsGrq6pFjCksS/rn18HGxMwSPTSe&#10;qcEmfTaj3Ju+cdPI2+vv6yGXhzORRd683VMrpXdKNaI1iVwwvoEOMc7IbWAL3bG0iWDtRUylYS35&#10;Je2OwfY4AfkUbUbs1Begw1SvBObNC7eEy3ktkdM07uokikn2Rvm+gPQQn0V9a0HPxoFOA/+JDqDd&#10;wNXpCHKCNeK+sgr+mBjYXYcMecXPimA5jFGtv/Koy8xwPfW5yayzViLCspri2PrP2xEnZ2FCvqNT&#10;Ncau7rudiaJrGeHNkL7tupp21MIRaY+v5WX+NyLGZUTL1wHiBnk08H6UzKAvKi9kotUkEhoLbcGm&#10;gZhapS3nkaF0IObAZp21GdohIGeP14Mc/RBkATVT9QQa/H8jH/TZDF5Fe96CdAg7EuP3jK2/HhGz&#10;lxKTqfnMF3MJ27yaAp9HbeHdmphgryrsKaP6KK4MmfvLgqA9d2VqiqpDWk0xfiey4rWZjFbvQHO4&#10;UobG9/cN99UXMnM+LkEuC4ci/ZgdZpy+2+oJsZ8D2rCPmU2d5hMzJl6yyMw3xuTjNegUmFYT1uV/&#10;GgP+hbizWXkvIDcFzwexquCujLMxwvBBJPLO6j2JFRAkPvwPigKYIObFMjb9+0gp/FPox8yZsQKa&#10;9S+jQlPgM4yWYG2FRF4v/pXhCmZyRAbL714HI1imeC+bc/busvMCy2AnNBshtLpVteFyRpDtIsld&#10;ZZkZrkOEpw3RMvHQxvO9vs4LWQHfNPH8gJhJ9g4GV9T1UEiFeYybHL0MsaN9v6M57izP0h+JMk8A&#10;/cDVy5G+zaeUGQgl9Z8CHocO/nxy/r9xVtb/b0QB46uJiv/U8rWSuVO8FzDPSd2MEFcpjUHjc5n7&#10;uywZZBUHlmJfZs7fVFo4n2itLdMp2nd2wo93aajDRSXlzRbGUEwgkfMoFGmyhGaiZRzzQ5ASf8Gj&#10;iWDtRJGtvpaYFrkV3EQYQ0rmmylaDP8GiTutyxwGoXjwK0g087vMNCKo96HB7g2yUGsCS9+JRMCV&#10;RMJoXOfVSOn5ftQfpnsYIzoXGjYnemovaiT9dCD1zpYQw1mqOCwQ518HIzS7U50R1N5/Pu025Qch&#10;1cYyimPjCYN/zyX2/6g2AZf4z4jW3cDTkRqmzFcr1cnZxvzikVRojlFHsDYhHmhpnIllQexzQwNw&#10;RD20A5xIVNobZ/Vmd99ci4cBeATiaMxTeQLtfp91dW1f4EwrIMir/4fA29xvRhyXIgvNoUj/YPWy&#10;HbFHPMXFFtoGSN9j380V5kPj6t+xb4t776FaWW1ltUkNA1KUP8g9W9be66m2JNpzPSTOrsg/m3LR&#10;TyEusWpyi/KUZFeouvoPFonWEtRXxzJT3eHfZcTUfj+aqJNbsGgiWBsTics0yrFzJAnVHpDAfBIR&#10;PouJmkade3BDfYZGUj8zB5vTneGDRD+o1txVhQj4Jyg4/DFEZ1RvWX09Ekdvw3GWyTtN6e7N0vcL&#10;DivBLi3u2RD4LhKr/XUW6ueziG4zVbB+3JqZlu8UN1E8M7DMt8uIw4OQT9ZmVBMjkFEg5ZrjC2aZ&#10;+sURrbVo0/wxSjhpRq46QtlD6/1oFvhx9SmByNy1QX6NE0WVbZG/zouSe2s7O1mId1DMi24PvsX9&#10;PZdc1uOQLgnUtgkkTnwhqQ/UTMAKxToogeG3UV+Z6GcK9qvRpJjhPlBCIM3XzUcZeI53rjCfHNbO&#10;RII1lvzuuZ+l6HTsw0qug/PPNjokg2WGKGvrOIo+uIaZ68MbBuy3XVwbUrWGcVYgEe0PtEPTGNia&#10;y/w8TIKmM+ADiPj67A1173goeTbZhap4L/PDskW7hEhtbeEYPoWChd/i7m/jw2G72ueQ0+guRC7r&#10;WWgxn0G5lWMolHT8m4kTyep+HC7tTRN3lZRpnNqOSKR8DMUjwUF9+SUUknRbWl7F++6jyGHBwgsY&#10;ny1WIu7ECPtcwvfjfqU3KBOs6X0uQyFRdeWBrIN3tLjvYleHwoAn8+k56LDde9L7HJahTfbD6Q+5&#10;e5BFpaxGflp/T1EErMKuNb8tCKQEy5TSZUem2wI369abkMxrmRwmgKkqopX4Wd2NFM3/RpFdfTPw&#10;NOKBFaO2UD0F6a/M72ociRT/j5k+QKVbTAkB7KETg/4DHXSQ7rLTqK8+5Mts0a4yI4SN1/2FwzqY&#10;aISoeu+o6xOQUyhALyhbd9m4n+f+The6J357IOJShwyncK+5x/SrLyx5Z9qG3yFXoVSxb7BN81QU&#10;CmcMh+cSU4liW8qtiwsGbXY14zwmKObiMa7oDKIT5FJolMdtIP6TaNkJRN3PMYzo8IWSOtjxZH4i&#10;mJzvrTczHqxp0/EopGVLZtb7asQ1fohI7NsuwDLu9/7CYVlH7svoHVGbYC4IVcHW9t0l1M9DW+x7&#10;UTQc+PG1uT6NyzLasFkZ8VuLxLOyC6QTSzl5X77164WIQciq7nfYjPokh+sdbSaKv+ceimZ5kG7h&#10;VygebBKntEsXuE9Dg5xQP0wMFrUONTETpMsa1Q77TOSjYkRjKYqL/CYNnFXSDtPn7YCClk33ZpPB&#10;PNe/DByCOxYsv2fWsYmLGc69BKIP1nx2yBgiWNuV/ObFpuuR17u3qJVhFRpniJtMoFhWRnsrZhpx&#10;MFFylaGsDwMyHjRxgIalLDKlexVssI5D+isfotFDpt1foKPpa4mWQwZ8HiUkMyLYQ0rxx7r3DqX9&#10;K3nvG5mZF/skqq10VeVMIrH1PCI3aGUap/j3wPPQRBlDRKq3GE7WnScEpLvapcV9ZmFte1XBOt70&#10;s1WhNEZkrqXZtcHcTewMyXSyGLG6i6KbSh2qykgNEWX3l/02SXsfx/TosgWHNgTLFiHIj+plSP9k&#10;MOJliuV3EGXgGd7rCZe1FoUFkD9vE/TtFI+4b9WYmvuPRZygEcUM+F/gW8xk4ftlVLz3A4gr24L8&#10;2LL8+3EUTnMUct2w8hb8JFhP2BYp3esWsInRbQ53bXvIq3HCfcV7RYjOWuTP1GaHaWrDDdSkRU42&#10;sbLTpwchWik2Qkr6pnqC5vOahnvWKxrPJaSonLOGvxHJ+MZtTREJztuQh/wLcJa4MgV6JrPMl5HF&#10;8AiiWHgUUmR/fRZt83hj/unZ9A8kdSkQK/ua2PadgJNRsj0jekbwx/PfXoYmXEGB33FVpdiHdvPv&#10;FrTg2+o1D84/q5TWlnhyX4ouIx723O+QEryqvDYDG3BJ+1o8c2dDWVbf+lbIAAAgAElEQVTGSsTd&#10;rYGigSohwFvRPqTrj9wPCFYZxpFrwiXIY3trYlqLaRRusys67eMW+rQp9GPTcg7Geva9eTk+IPi1&#10;+XdeD7AhOmx0e4ps7hKU1+p8pGCcds/9NXAAMTPjEhRo/D33fB2xAhkXPkk8iMMUqUZgX4piEPu6&#10;uI5IzUTSt02n5KxFG+RHkWEjzRWWdvAkWsDnIh1VFcGyOb8f1aKSvceMQrMZzB5aJ21h2RzKpB9v&#10;1dsVEd3f5v9XnelyJOqXKgODV5HcwhyHyM0Ws7XOnIFErXOI5lBzlHwEUjgfjjpzHEpFrQyJWD8n&#10;cnDTiMt6HiJE70Sezheg3cpSCZuu7EHA6Sh4+WzkLvFXyOT8Rmaab9/r2h4cAbXffX6sDwFfITpt&#10;2vdjeV0ORS4NPmVHh3pkRNeCKtgY2EnPk8llFrO1+dVDvmuX5s+VGVL8JrQHGlMf15paia+i6K9X&#10;1o4yES1th9WpLsuoEdgLiBy8N+ak9wK8NalD2fX3FDn+MvcMe8d5Ne1YEJgtwVqCPIKPQqlTvE/N&#10;JHJ3+Bmy0NkiL/MezlCSv+C+A3Etvwb+GTnT7Yx0R7ZLmqK1RwyTOBBxPJ9HA7AP0ao5jhKd/RQ3&#10;EZKd3+q3W173fyROINuNxtAxZ0cQB7lfXsddtUJT3JrNpcuI86ZsQdpvNifqEv1BXLDbIqV/FUEY&#10;QwSr6QixJmREhXsbXEW5l70vz4jMM9G5A8vd77ZprkBz/TDieipbe+NE7rWf0XahzuHZEqx1aKKs&#10;RZazDxH9tWyBL0NHgr2Wmbofj++gE279b0uI4ld6+YlmA9ijuGN4McIm9nF5mWUKWhvsP0eE8ij3&#10;vJU5hVIqv5h4hmDfAjjigb6/cmtboNRFVXop28TuRiJSD5jKLa1llxGYQP2pNxDnE0hVUCY6eoK1&#10;2n3XVG4Zx3UnkcNqg7uRtJHWJ32XrZO/RUT6/yG1xWfRWrqQmH67qu6+rtcRk3MuWAxNsJLTPKyc&#10;16PwE4guBDYp3w98gqLy0XywAgpePYBITPwOmlqCqixHY+6ZzL3Hc0fHocXifclMtFwC/CvizmzX&#10;MiI2jripI5EIWBafNWrcXwnW7kjvWdU++77JtcDfb2PhT1Vu6r/98/uqUllPMRh3VIZrKT+GrK5u&#10;X8g/U+/0suczFBT/bLSRPh85YKfB2FU7qVn0v0Z9iNGCwLBKdwAfbmOLP0NE6XLk4vAgog5gEh2b&#10;vRfSQd2ZP7cCEYhHEq02GeJevBPbZYjr+S2aBHci/5alyKdnBSJEhyBL0SYUiRZoUv8JSkP898TT&#10;qyeRAvO/8ue94tGI1aeAfyByVf1MD3N4GvT9lWDZIaRQzeGAOJO2SmB75nIi5w9FwmV/ez2WN+qU&#10;6b0uIqYQrlLkl8Huu5wWG1tyyMTpSD98dMM77beq8tO2l2EJsmx/nLyvF6o4CLMkWFAgWibuZcBp&#10;yPx/CtIhmQVxingQ5FOQ9eJ/kNXPOBlzPF2KzNlfRuzuuZSbXD0HBSKc2yGd118jQugHfRpZG/8d&#10;Eak3oAMfPpl/ny6QKST+/Wdejp16M9cDO+uxWWDwi8cOi7XDN8ruhWZ9VBmuQ9au7VvcuzfRsp3C&#10;WwrNQXoYXNR8Sx9eP/XP6Cgu+87P4ZTwVklKbQns+2mfsXW9YiQxXE53Y509gUy5hyMXAiMoFgm/&#10;F/KMP504sUwMXIocVF+HiN1r0VFGxtmUKVzteZv8f0Cy/KPQLvX95DmboK9DcvvJlMdQnYeUll8g&#10;hkkEazOzUMY2JWWj3h9nsaMpaZ+hr/tpsTnY4rwXLb7MfV91/27IT6mwsJMsuU1By00wotvmHEKv&#10;b/0RIiR11ufQcFHxnMePkBW+l1eyqY7rFYMSrNrWJHqtHpo8T0bWPhMZTezbCgUMe0LSA76I4rM+&#10;RPEklH74S5ZlISeS/ZAXikp3XJm/zOvwlyi1y5h7Vw8R1bLd81PICmhOf9N5u6YTb/1GlBCmMgWt&#10;EeAe0kk8ivLjmhYTUq4AZIQxglWXqriHCxgeEKZ3Mot11ThtRLN7xZUUU730Wl52b1PqZkNwm6Bt&#10;7m9GG6/pZ33UxKCiqRExP9fPQIr5Nvq+BYFBxY64UtulkbEF+XdopzmRmYpAPxH+AcnStnD7nV3y&#10;rtDwu9XDfvgicmf4GlKcm54jJVbrkFvEycQDIfptc+UWvkve6d+bsvF+9xtDRHtX5M91JBKX9iT6&#10;fc12IplVtU48GFTcWZt/1qUhMf1jOse2RYHjUM452CZqnFIrJPPOHDX9Ai8T+5YgPdb/Ut031yIR&#10;cznVx9BX4W4GV9p7vdQYSpZ5PfK58v6Bg2T+sHJ9Gp/PIQvjmgHLWa8YlGBVpkb2C9dNHpuQYygz&#10;w5WUh9usRSmDv5v/bwMSklxFw8DvSNehQx++ikJ/1hJDikAi4LOQpcnEy75ZuMyTuEWco9etbYR8&#10;yVYhh9sj0YLZjpkKUuPqZqPLWkqxHWUT08ZoGTOJbBkCMSd6XWR/QDpKmzNW5sFE8buOw78dqQaG&#10;wdXENpXVyxPvhyAJoGoTnkJxgLsxOMd7B7IQVhkVZsAp371e9m1IffIeNGe89bBO6e7FSfNVuwBZ&#10;yr9CcjLQQhcHYfDFsGnVD2WpZNx3dox21fNPQ4r6ZcR8P23SsNRSC2OxE65nEp0qcjoyAPjBXkck&#10;Vp6AtCGaXgFqIUY7IX3doYhAHYx0dkvcfd4YYByBTS5PTAeBt7L9iJhuuWzBrUHc3CBezt9Hm8/a&#10;mnvM+mSGEqtTD/X9bZQHLAfEzfyMOBfawPfT2cgXqew3j42Ih1vUuQ58GbVjNe3Tr4wj49LASIiW&#10;Wal/glIYPxIZkx6G5tcy6gn/OuTLdjayxp+G5lk/DtHeuRgwU85SCM000jP8BjXMe6+fixTmP0HK&#10;8Jvd72WU3sS+rVEw6VbExTqBxMBPEBXyc5EvKkvEQ9CiOJN4ErCJoMcRnUs9dkGuEyuRy4RN3HvQ&#10;DvwHtAAOIRKnvSgGnqYE0PukpdyNES5j5SeQtfI/gPEsyyrN/bmObFBdR//eMq52BDm+h9GTxJ2m&#10;eU5kVcF0LZGRzL2kH4cvWIG0aaaSVnB1SJXvGyBu/WBEuDYmEv9pNC+vRWvuWrR5ZK6cRRmZ0ZZg&#10;GWyRWMfcjjrkJ8g792xiznLTQy1FVP59KK5viqh4/xryKu+LXSMQASvhBn9pXo+j0E6eEaP4VxMP&#10;23wiUn4/GOldKjnMqldSnBw28cpClEBuHJciy+VdSBQws/sgBAtmjm3rWVk3BvN8OMFAosps61aj&#10;j5xtma1FwjK4JJa2sfkNtvbR/HPM/T/IJrDg0IZgLSMutCn3jBEZzx3chIjWD9F5excgSr8hUqBu&#10;TRSX7kaBzVf3K1ORnniUKMlg+jGU89oP5sWIE0yP1SozG9fB+sYTJ2v/HUj8PAc5w/4KiVmmt9kl&#10;r8dSBiRYMPxiy7LMp8EeSdkVaU9aPzcoRvmeERDBWRErX5Srj4mJbTrIJ5dclETKo60OyzrZzNCB&#10;6LrgF+TWyIXgT9CkvwElwZ9Ai98P1oco+susL/wTCmvYmkiQ96Z4nptX0pYRoTpkqC/uQ1kpLkSE&#10;/Deof3z5GdExdQtmEfozzMRsOhvPyhx20s/XYhnlexbQAjeCUyrWNT23PjDA0X+tMajS3YIyD0H6&#10;mv77iX5KRvnHULaG57v3GKd2HzEsRgXMMXeVcFZe4X000ZLlLWkpO+2ftxzZU4h7nKCoY0j1R2NI&#10;tL4apbap0jH1kr9H4thbhYrcXzZGVfcHhtAzjlpcm2uMSvRtq+IY4H2N3H2ZGDqX3G2igqhy4yn8&#10;7tZjn/C2eWfbjKOGzyFHtj2Q/ucRyHKxC0UTOnkljBCYGGSs7KnERGUh3zXmklhBkUD0kCvB+1He&#10;LKujb6st4ttQDOOZiDu6Bolt5r+yHCk/d0N98iiiYcHab0Heb0HnFj4NZXccJ0n2N5c6ooayB+Hm&#10;vOX1fneohluA6407GQH6RGKYOWVGgrqj9pJymyzqdb+Pq7jQaAgYlMPaGE3sS1Ew8ucRodoPmVkf&#10;hhbtCiLXUYbvUKSq8z0xnokyWW5D5A4NNlFPR8HQP0JWljLYvefmf38UEaunosj5wynuLJaY8DuI&#10;sN1HvvjnetHXTNplyC/scDSOO6BxXkb02r4D6ScvQs63lxJdDgrWuRbtWELkSts4Ys53iJLnDDZi&#10;cN+rgKzpllRwUAzaP6A630Fxwy0b8AmKklEZLMZzbQih9P023InrkmElklqOQHTAjg6zVOp3Iv31&#10;ZchYdx4lhwtXrYlBCdZaou+MZRedRErj3xKTiR2AItwfgRzdNqUoMp3NTNFrpEg60hTJy4GPoIMq&#10;Ifo+eZ3UF5FH/m9L6lZGgP1O3ENuHv+RX4/O32dpTGwSHpF//7Jh2jYoKojVASiV9VORZ31bjsII&#10;9HdQRo4L/bMtiO8zUNvvJRoUfNl2bYnG4V0tyx0JXF9tjhyZVwxYxKYocd6LrLwB6/0YFBZmsbNN&#10;mEZE4YXkjtf5O8uenQB+TExpXkaQNkGqn2dTQgD9XHKc6MbI2v9naN0vZ6ZutgrXIr++b+SfhfIb&#10;+y6EMJ4rX/cNIdwXhKn882X5b3YPIYQshDCWX+P5Zf9nIYSPhRCmQwjr8s/rQwib57/NyQxM6mbX&#10;Q0MIV+Z1CCGEnvt7MoTw8xDCw139CSFMWJsAa4+VvSyEsFUI4agQwktCCG8NIRwXQnh7COG1IYSn&#10;hRB2DCFsHUJ4f95+35chhLC/K9PYd3v3QSGENXk9J/P7X2T9P0Rf2LVhCOEDST2mW169pN/uDSG8&#10;KW+D9ZsXF8vq8SLX572Ky3470dd9PuD6f/8wPK4IISwfpN6unc/M2z5VXXwBvfzzo8GtOxyhcGVv&#10;HEK4Jb/fj2d6/Ty49VNSzpj7+wkhhEvdsyFo3q4NGsemK7i2/mcIYcsQ196M/hs67CNxgguuYE9R&#10;xxC1tR14DPk53UlRETcyJA20f95IPE7MQl7MOHAvCjL9l5Li+jtQUu7j0KlAj0K6MGtLWZuuQOzv&#10;GooZVMfRrvS29q0bDCWLZQ8UlnQARcPDIOPgucllqF+fgtpyY/79vHFEc4hd889hxLptEYd29+iq&#10;U4kemkuPIko+VR0/mwHxqg2TNI5Ha2sMcYQ2/30yzSZYdEcPefA/AnF3Z+XlTPu5NLKcS56AheJK&#10;SeO51jEHmTordrLtUZzYk4kuGBbQ3EP6qZfjAlQr5HLQAByOFPXHUHTg8w+k1pLdUIZNiJY/E4OO&#10;btm8gVHSht2Qk+x2aAyqnFebkIrya5Hh5X+RDvMWmBsxf64Ritaugxl+U90Y6QOva7rRYRglv7fo&#10;7oNUD7+tvn34cXHzydbOvyMx1Ixr5uA8aFC2D+ieQl77P0YhSGflZQUjWiMzm4dq1t17eQeKmSBH&#10;9u4SPB7pyp6EFpXXj4yhBGmPQxxQNHnN5BTt+ifkDHsMLtUMcVJb2ubUNcIItBFMu98slfOBTdCx&#10;ZsYNpkdmDQPrl2VoV98DBbb3ldQV47JYcBAz50DTZQjUH9Q6Kth8MkLxcEoOL07qNTBKyno7kjDM&#10;8DLuPodd17Z+JpFh4BSka8vSmwZBYWHXECmPu5L/N6IY7jM0knfbQslQQrLvET3rza0gQ2luHoYi&#10;3wtIRBgjLMtQZPvb8+89d+gP3LDf7qG4M5sYmCX3BZQ2pFAFRsud2Pi+D8U19gPLZ1FmOiEDMZvs&#10;0SiD66gxX3nBvOpizyHLsL5dxRyoPBrwOAZPgTMIAspu8TbUtqU0E+9BYURrJfBuEn/EofNh1WBj&#10;dNTW4fn1ZOLCh5gPadA8QQUkRNJ8nnZFqYwfnn/v8wZlyKr1YkqOAy8RBcfQgPwQuSJYOl+z9E3k&#10;5XwXpbL9HbIQ3ofSr6xEk3YfRCz2InJU48jL/c1DNb4BCfu+CrUZImdVJep4LtTgJ2HVs0a0JhHB&#10;Opk85GoR6rICsgwOah2EyDmPEeNR55rN9Fz74ci6eitzRyzfnpdtZy7U6cvq5lMV/Hr9G3QozO/s&#10;x7YEq+4Fm6L0KUchc/1haGFWlb0JcjS9Egaf0BXcXAYcixq3HHWmF896KFnZp2c8WB7nZhT9u0Ri&#10;Ze0xYvVdlGniSmIHG/d1CzL3n27VJh6UcUD+/Gm4fE8jXtSeU3g5zacm++/T38xI0GSiNqK1BDnj&#10;Hp/UZT4W72xhY7gzCo2aDfZAc73tSTSz7Z+AmIEHo7kVRrxZBEQQn5D/3ybNTtV86SX3pPD5/l9C&#10;fjZoCCEblMN6HXL0WoK4mIcgArUNM88/Mx3PEooJxwKyaPxowHdXEattkL/OXxGV4L5d5+e/nZs+&#10;mBCrVAfxFWSxmETcYeovtD86uOIypOi8BAUr++O+/TO355cdSuCTp82FVQfksPd09w6fzqYKv0V+&#10;RH/I798CcQvPb1EfG6BnIZF75MaVecI+xLjZYcdgW8TxnzOqSlXAb5bjSCz8IXNz5Pxz88/0RCu/&#10;IfmN7SYk8fweeQZYSuoXMdNXy8NieseRDnpD8nC4NgQruM/dmXnIo1V0ihhLaJfpjqAYKP0MpPTu&#10;O6PVpDgugzmCvggtjG2IeiHTWY2hI+v/kZJUviWclbe4fAg5wYEIrl94ds9OSLR9jOuDG1FQ87n5&#10;53lIqe8ND+mu460ggegRPFs9UyCmxbF3228pzM3ic0Tx0cMI+NeIE60M9v0BaGJeBIuDwwrF8K1D&#10;7OuSW+sImG9nhvpgrglW+v6HMzfECrSBm3qnKtbV5vcFSB1UFiXyWbQp7kR5Vl1LPNBDRH8VCo3L&#10;RmEltEEdRw3xwc83okn+M4o5efZDvjvlBUZlupXjLW8TyDv7TOQRvA1xgEwReDvwHJRLvk+s0tOZ&#10;K8TAf0JnFlbBE2hPqDMk8v0J0k19BXEr56FTd96Adr/tmHmKNUAWQjBLyWwVl4ZDXTl13MIE4kRf&#10;WPLbkvz3U4HXUM812U6fEUXfxYLMfe6W/z0MgfV93D8daI4tpn6MV6H1NeoXboeymBiaaMeLELFK&#10;DztehnRSr6p5NlWxHGo/jEKHBZE7uRidUnMmWqiXIBHp8Pw7XCVeh84k7DsaVpRrZa9AnNnz8/Ig&#10;uhf4zjsNyb2/pwYVxOoNRGsgFNt9FyKEO1CMk7SCJim6OGTIGrp3fh2b33cH6qcLkJ/J2aif7sqf&#10;WevKHXjSJeLtHq6sqjE0ndxnKZ+EPgfal1GoTJonrP964kRbhc6TNHXAYtC8B2Q02qPpxhblZDjX&#10;hnnERoizvojREC3boHcnnoZed28PncbzK6IkpB9l2DJn5f9B6pS9KE9G6P0VzWLbWofVJMsbC3cp&#10;8p/4McWUrGcjN4MnEfVaxyDd0udryt0FOSU+HXgs8h72XIm9G7Tg34nEORAl7+ccL8mIkOqsjgfe&#10;lLzf68Q+jrItHI0m9L7533sjfcUS90xwz/p3ZUgRe0R+vTBvyx8QAbsIEbPT0MQblgO2ibqCZj2S&#10;6Wp+iRNpXCxaQCLrGNIjnI9iJJt0bzvW/L4QYQtzOySq1OEP+ecKiqJ2Kva2PX9xtvDvDkgUO5nB&#10;RcO6MW3jM2jMxTm4U9xdih1f9hRiavak+p02/81iGwYlWBchSmsuCnbqjBGmpyGRaF1e6XMQ9/Az&#10;FNj4JIqZSk9Aup6bUZaDlYgdPwSJFIcQT3OxkBpriNcVfBHpxLyrxFqYaX1LdFZW1oeR+FgG4xBO&#10;yz/PyC+DscqH5ddBaLFuysyc7SaX+wEcy9u9Ejm72j03VtSnDax8M4aU7WDp7nuzfZ9m0Ei4UdNJ&#10;lE1ur/xta2Wrq1co+W6uYPXYHakVvKOv/x00r5fS7PqwOxqDmxvuGzUejNbNvS1E0XTjLhvTQDwp&#10;qQ72/B+JetFe8jtEGvDHFmXaJg8DEiyAk5DS/V+Rsnmp+90rijdEFsSHULQEmFLZsB1a/GtRxHnq&#10;IGhciin40qDf7yOnyJ+6xvU/K4iVzzM/gXyz/ox63IX8pspwY379JP9/DCkK90cE90ikfF1Jecod&#10;MxR48XcJInr2+6BIn2lbRqo0rnqujQK97ekyCw37Ew0fpj9N23oW8nd6DDMJmu+bJWjs54Ng+cm+&#10;M5p7qYGsCXVj2oZb9gSpDl4P3AZ2LFxrgmWwI+ifgLzFX4HYz42IFkGLCbLFZ1xECmvccqLlyS9c&#10;rw/yZd+BxM7/QGKMhxGqQscnu8w4IlY7I4PAoRRhgZx2UEXrzAg5esgyeAWyhICI8Y6Iazwif+c+&#10;xHxc/h1GpL04Op8YFVez2FwarL2r8s8s+d7jYkSwmjCOxMKfNt04Qti6exxiBlJOcVBYPwxy5Nq2&#10;Le9LObAURgP6hrNhPN2N+Pwsv3ZHYuAzkDLc6168Ob+qQv631CJo99yG9GBfB75N5HaMqNh9dQp8&#10;wzQiuCcjMTTtsK8iHzE7egzEkm6PdHRArahZhjvy63zE0ZG/e08UZLsvImT7IlHSCjc9wGLEoIR+&#10;vcG5NCxBSuAmXI+MSbXFkije59jr3+uweoj7exez3zhs/rXJPGGNe3DLMjeknhuzPuyH8qUEy5sS&#10;fXI72+n93/bSy1FCto8gsefhiPs6CCmnqyxKZbB334w4ufOQqPVLiv4cphOaKvmuybr2NuAdRMpt&#10;x9WPI6vWsYgTsrZbpz0UGRNK0TKNrMcf8+v/iER6J8R5HYqcax+TFlfTroWGxVRX0/NtisR541Jg&#10;JncyicKOljMzrTbuGcM+I66roUrfZJ8HofXodY7DvgfaZZ6wvjoIidYXE/u2rMwv4MJuKjCRl5NR&#10;IhKajskUZj4KO61YGa5Dpu+vooHdCikmd0OEaxtmpky9F3nB/hFxTpcjK4zlzErfWaWktQEsY3+N&#10;GHwGWbjsfmv/OMrr9M/5/5flbfF6pL9CqWUmof1u2ZITswG9Or++h/rxQop6vcVkdZvTAzRGDOtX&#10;iyGss5bdhjy470Zc8+YV91kZe5JYrEeEy9H8TBMJWL8vR2FlVzO7sbAJey1qextjyhjyZXw5xDmf&#10;5NDLUOja6TMfr0Ydh+WtcsaBFBquA2377LSvjMnNt+bX+S3qUqfgrVuo40gs3Q9Z61YgQmlOrPei&#10;jn4OMTWstcXq+kLkXmHvuQ/4FtFyGPKy34AiyJehnNeq4ABsfoNHvxHRKbQQ0o1i1JN+GKQOr2Uw&#10;PeZigQ3KgcQ14FN6e1xJTFd0DdUEi7ycFUjSuGCE9QUt9Ccz0wXDGwEeiza+UWx0N6I2PKzmHuu7&#10;ALwU6ZnPtjrZJu/cirLk2TpMw0yClbK+puwyIta3/PjsBi25iCYq35Zl7aHd4xFId/YIRLCWtHgH&#10;xFQoGdp9noTEzyU4PRjSYXlXhwz5al2Izhfsi8UhhBmuAIMgSX5oC30DZuqw7mH9483IMlvG6hvG&#10;iDqPBS0ahuJx9JYSpq7OV9mjiAs/qOQeK6OHxnFPRkewjDu5AolTOyXfQ8yPdQySZkax0fVQjGId&#10;wYKiG83nkD6rnx3FSSZNqpvKwqtwG3GB2GJ+MnnCthCCfWfl9FddHv4S8sv+n86td14x2ANClmU9&#10;uz+pg783IN3OB5Fu69soA8N+xGwEU8iasQYNkl3rEPFN/bg2RSEEexGT8lsdLkbuGzb5jHifgoJA&#10;LbjbFP22Y8x2NzOuajPXB1bmjNNF5gPJhvRHYtrnKyquy4jOlYsBNubm6Fk1htNoc7O/L2tZ/iiT&#10;+VkB9xB9A/33HubgPCp8k2IyzCpkqH/2QsYt7y2QOals4LVSR7DuJu6S9sLHovi4Y3AhJHnyeb9o&#10;PXzjejlx6jliFuWhmYNpxOIpSK/zK+C1yAMeotjq/bSWol1tmbuWEomuT9G8JQoROhs5sW5M1OOB&#10;4govoeiLk6FB+CCR4+yh9BcpuzvQgCQe+N4pMXW0W9BcS4KFXFfvurCUmMra/+7HcAKJhDYel9Iu&#10;JfDeDb8PAutPOwGnzA3F1/vRjMbFJEMc3TeJBKkOZvF/Gor5NcZjDAqW2YHWSB3BmqTcWXJf1FGf&#10;QDqhNHUMFBds3cLty7Y1aY5/jvyZnkBR72SDYB0D0j39HrHfZyPr4oXEVCkTxCyhU66MTZB+6tco&#10;3Mb0XHeihPh35s/1z+JDgcAXothG8yMzwhXSjKxtrhwmEtrOaIN6N82m9JGiZUbZWiyS5H0B6T13&#10;zv+vs/z5aIqL3N9lhh57ZhWjN0IsQ7rhm0p+82Ktd26dLTKUHcXiT+vus2sarZEvuP/HYTii1dSJ&#10;l5d8Z4v8ZUg0ey3RdZ4QkU72UsJVsRgOQCLf95A7AdB3LPWhLQFxXcchSn4IMqfuj2Tno/OyViF/&#10;pxchC+Zqil7nVuaewC+IIt9SYuzcrUQPeWvP7sjy+FuUk8uyI4Sk3EHk9UeiUKOXujaCFLx3J+XP&#10;GUaVXSDM0VFuc4C9kRhetoCsM+5Fek9bA9cSY2arOiygedLG0XQQmPW4LK+cN54dQXtHzjY4F/hA&#10;y3szYj2PRQHPtrlnSDz0rkONaCJY5xF1Q1BcfD20K52QN+L1FMWYjNwaF4rn+fUr6iisKbCXIdeB&#10;M5G+zOuvfFze5UgBfjAiSu9AB3teSvGkYHvutrwtnwH+AhG2t6HdybtCWKedjAiHhe/8Jn/P2USO&#10;0ojnJJqQryYeaX8S4sz2QTFYthv5/htDhH4P5HT7sbwf/xcRzOWuzSFv87wo3UdArFIXlFHo9uYC&#10;vqGrKu+K991AMf5tNTEvf1WnZWicd6v4fbb4iXtPmQ54C0S0YMioiRIu+Z1orrd6nCgZPQF5/a8k&#10;rnujDa2I1owGJLnNf1dSSNoxk0in9G4kVp2Cjng/gxhqY/qlAP0zDH0Fp5DD6SeQgjKjGB6T5XX9&#10;EVKEf4diqEC6INIUrPa8hd1cn9f33cBbkf/VhHs2Q8n/DkYK/AlEMB6KuLlXUUzAH9znYUROaxpN&#10;8puRz84aYizjFmjXXUnxKDQTVc0Pztpi4sdQysoh8Q6ivrAt1lEY2OIAABmWSURBVCJjxtmI66xy&#10;D1jvSLg/n0OqisO6iqLF7R6kbtiT6vZNEj3oz6y5b1j8OK/TMmI/p/Py8WjNDK3LStwR1gLPQ07P&#10;m9U9Z48TrYeHoFjMZyPiZRxYL7e210oQTRT3IrTgVhBlzxvyz22TiowjbuLFKB/VRSjv+Q+RyHQr&#10;RS7J66PeQTxQdJJi4OwSRKiOR9yHf74OByAu6Sikm9gwL2sNmmg35PX6PpqI70YmYqvT3ugoo0+4&#10;900hs/5/5vV9OpooflF6DspnYqgbiDSX1hJ3v5V9lt08j3qhP0P9OCgCCmw/cbTVGTk88a9SjPt7&#10;LDTLFO3TSKd1DDO59FR/u8p+d24wo8BVaB4/JPnez7dHUpSUZgvzPn8OUtsYDahbk9YXPaT7/gly&#10;LP0kAxCtJoJ1C1Jgb08kSvcgq90rEWEyTsOcCS1j5qr8ej3iaC5BO8yFyPR9fX7fp1AYimGp+7wU&#10;cT9fo9ghdbvUk5B49kiaOZE/z8u8hhii4/GniGB5XdRSNFh/icI4/grJ53tW1M8r93190oldlujO&#10;Bu4+xLHMi/7K4R4G35VN97eG4gkoC1EkNJjI1sS9XsVMq2Cda4ONaw85pc4FJtGpTQ8hrlF7t43d&#10;/oggXzWbFzkuy6SeHyCi9VXiwRF1R7Kl6+PfEOf5Bvd7qCNabSwX3yc6oplvxfboxJhDUGK7u1BH&#10;GWcwidhGW6wrEAF5A+JOfoHEzXORFcM61juqfgAN8lfd7946mHI026G0xN+imlgZ92T6J/t7x7xN&#10;np2eRmLCBvbOfFdc58q5AomIhwJPRPGUv0KL1cpZQtG9wi47YcZy39+H9AIfJaYjsWPHL0D6tvkU&#10;Bw3pHMkaLn//YsnYsIIYhlUG6/PLKRp8MuLhJnXjMoYIxlyEK2VEyaNsrKy+jyJavwdBYZ2ZO5L7&#10;7hR0HBfEo97awObGa5CDqU8jVanTKuWwEj3WT4iU20Iujs2/vxB5g78PcSvPRYvXHDlNF1UoPm/Y&#10;RkTfKM9VnY8cQn/u7reK9zvL1W8M6Za+Qgy0Lps86S7fL9O1y/63gd8K+WbVeQoHohOfOfLtihTu&#10;+yCF/BZIXN6Q2Ce3oZTLV6JJfzkigKvQwRm+zj8gToT51gUtON3TiBGIObBMf+l/g8itXJn8FhB3&#10;DsX5lM6/Hhr/XZgll1OCMWQUugapPlKx1PAoJH7NxSZyMrKWfpVItOo4LS8egqSUTZGKxaS06TLR&#10;uY3V4NfIwmZ5owIKidmUyFldjxwpP4QsEs9ATqb7U53IzWd8sMH/AiKA9xEV7tL05Q6mJRasJyIX&#10;iKaFZb+PIf3VNNLDmV+W3WMEdikyW3urY9swpKvy63sNdSrDy1xdrY+sfVk2ixCgIVGliF7IIt6g&#10;aPIGz9Dmch3FOQvSzf6BYrrkFAEpp3dDbhGjHL8xZND5BTMJFkRm4xF5HQfJa1UJx9SYiHwKUu5/&#10;E23Mlsmijqu036bRwTJfQSKmJ1o+xXJrFvUUq2f+zA5IVxQoHrI5jZTDbyAmqvtH5E5wDkWRzP7O&#10;EGH6W+Rgdi+JgjCvsPls+ME4Blk/oN0C+hyanAciZfLeyH/rJKSXAhEJO8boDTSwuOlJPE33lmCC&#10;qAfcHO0y3tfsfOIBHgsB9wuOK/EPrPNEtxuvQEQrHcQbiFxWVd/YPN+XdjnbBoGt4R9Rbo2137dF&#10;rjlrRvXifD77JAmnozZeRORY23B0xjA8CxEtoyUzxNdKguUWl1HPta4giOfXeRnXfjcidCHScb2Y&#10;SBCsTPu8BemxPuXKg6K8TCICgkStr9F+Ab0FGQkuRrviHWi3+x/k/HoQsii+ChGqgxExzJL+qIQn&#10;XmVELJmkni024vxsiulNesiJ1LjMlk0dGSz+0k4nsnren7irpWiRlS123Pd1otyN7t60b3yZ+w9Z&#10;xyZkRPeGKrUHRN/C0b24OM8D4kKPQpyWWQ/biqE9RLTeiaNNft205bAuJepnTJH3aESxAcaybMYJ&#10;PHbfBAqt+Yvk+wxZDo9A+irj3qoIhE0cI4hfROZRjxsoN6WfgpT4dR23DnEy/4rE2wuonsStUUbE&#10;0hhKh1dQ7J81KKkgzJx884HNicYBO58QFo8yvQ02RRxWFRE2bv8K4rikupVLKBqGDHaTrbNhXESa&#10;YNzbVYgb93GvBvv/4Yze497D2ns3UgudxGBEy/rpn5HjeD9e0YhWG4JlDp+fLincDhxN8x/ZwO6A&#10;lPNPJVJ2y5N+OjLF9pWWSUB0/yphn9+DHDTT3eKJVlbyeTzRAjGWv8tAyTMZIsJ2pe8fFayNPTTA&#10;B1M8B/DrjF5JOwj+A1k+T0CT772IazaftPsD9kKGlbLsoTaPl+DC1Ermgw+CTpX2Xo+zE3GTHdWk&#10;MoLVI2bE9QvGv+dAYgK+NkHbrVGxRt6IJBZz2q6bM+mG/Clk9CoUXKt0zxVr9pJvIwc170/yXHJT&#10;fgjBFMRmZXsKskpYHJPPQ/V1xPqllW2DhxLPD/TPPQtxRY/P/7fJ8nNkhevnb0o7NzmzsKDkd+XM&#10;FcxK+q6S9/3LHL63DcrevwUSoRZtvvlkA9yL6ENUZ/JPLYQeZTG3UOSWQa43OzDaIHbbiDN0Ovdr&#10;G+oxZ7n2XUJPQ0BuOlejNW9EqywPn2cY1iLVyPEkx+81cljJ4v4Q8dQZM/W/Pf+0/FBbI2fLbyBi&#10;ZV7cU4hofQkRFy9uhYRAxJYUlaMQRT6freGTSGbelnh+mj14nm9LDbcUWtwzEiRB4WNIFNyP2KYJ&#10;JMZavNa8ioMN7bfEgoMe0rlQ0eZ05rXEtDLkcbDGrY8hK/kdzOSwPIwg7kJ0rh4F+iFvyLB1HeVi&#10;4bDIWlzx5uLcMUL0bRQ1YcQ1jU2GYn3tXMiXkBwKMqgjmyWNtzQtIGvhM5Ap861Ijn4JRR2WsdXv&#10;Q05mRe1zOwIxjpT3R1KUhy9Eu0pA1r3+oYv55yCJ5ELJNdfYBikZQUTAPO5PILL7ZckN5xSLJC3M&#10;KGAEq4rYjKM5dBvVC9bOpqyCH7uDyIn9CC2FJtXY6VJpVpO5xgyilSjilyED1l/m93qXJqiv50v7&#10;N4UwlOftu5l5ntinkOLxeCR3WpI8EwHvRXF5b0krV7cwkgHdAFnvUuXdq5HfFkSuL9VhLRiUTNKP&#10;IMXvJHFn/DQxdnC9iV3zwW2uJ1ijllJ/qo31/cXIOdi74/jc9vcgn726zrLfDu5/Mbq+tXpOU/T9&#10;s+9n/aIW+dyyRHLw7bN1+RUUg2sSVxui+nSUuQQYLt3EV5Hn9ePcy0wMM2JihzyMoVCVlyDOq4xY&#10;tV2QFq/nCdaXUHC16aemkDOrPxig6TjxeYPzI7P6Hgs8k6jwHUe+Pu/IHymzSHUYHVai+ZF6uHsE&#10;pHd6K1LOl+Ge/J46WPm7A+NZlvVcfvNZIYlM+UX+OTId4wCcYJbf35+zrm4mHr4HWQAt9rEJu6Dz&#10;Tn8MLQlW0iEgzf9viOKewftj3Y64sRPdb4UyB8RL8k9T2k0jq5Vv9K0o46iPCzvM3m/JwuabALi+&#10;M/Z4DZLNP06M0TRl6FuoFy86zB6mrtgdqTJMEqiaGJYUcjbvss8VwA4hhGuHLK8KNskuQsanA5kZ&#10;DF1GeZoWgz3jdWVNFKyvfTcuPVkDb0LeA9bnTeU9DBGsiWGPQb8IWbXMXcDMqmOIaHwOWQeMTY6a&#10;88GJhcUKHkZMc5yh44vKTiK5ADmuGQ5HegrLJ9Wmg+YSa5A+78tEc7q38nwivy+DB5QuaX3A9Fem&#10;AyrDID5ndRY446q3RFzDXBAsmyw/QAQr9RYfZjIZc3AQEp+bHE9vIsYBlyFDJ8b/EIXvtVmLllyx&#10;15pgJR7nAbF2T0TEJBA75nbEJUwjvdOatIw2cBS5R9Hp1D5TvzDDN4ncGKjDX4VCf/phEfNBCCpY&#10;6cOQ8eEQIrEfQ5ksX57f0xGrOYJLQgfimuoWjBGxUQ2EcSd7okU76o3TNuPTkCHKkgvMpv727MtR&#10;ivEmvffpSF00g1FxfZ8hK/hjW7zfuNIM6A2b7sIq8zykM/Ll7IHYtyWMJgxgKTFflnX+mWjAy/BD&#10;4lFMhhcjL9/+4I3QQlNAxcENGRIB7WDJxyIxxDKxgibD1YxucaxvLIZ2WHbbVBxMxZ4y6/GwFuUx&#10;FGM7rHRTChfXB/KXNOv4qCf6dMNVueadpXsa+Ua2TUWzBWJ+JoYlWPbiq5HiGGJnTaOQnW+4+ydQ&#10;bvdh3rU/MdbL8B1/Q8KJTCKxagnFtDBfIh7jNAb989HaoHZCJvnq/QnZY4ij+hLyB3uBK88rRY9D&#10;ebz6DRlRVoZBxret53pbx8P1TbCq3m+b7aZoPtgmNp/13ZfcLysUz7Os9G8aAAHlmj+H2NZREC2r&#10;k6kwqq66tDJWP1AEhz/Qxbc37YON87KnByZYCXHIUPDwK4kmeZPVn4QIizmK+aN9BoF51nsHs76M&#10;XBFz+HFEIJYRU9RsixR9R+D0EsMcY5WYcj2BCmhAN0Zi7HcRR/UcYo6wNAHhN5Dz7aiJFQw26Zsm&#10;mmExxRGm7bf/LQX2lsyvPtMW4U4o3cxI+9KthWmSTX0WsHlaFrpUhqY2WX/fy2AnUgcYMgNi4hQ2&#10;jkI4PkhckOZi8HikANwcF/owIIHwfjIZEkEvrKkT+btelH+a0nAKmZ7PQAekbprfO4a4v6bLTvpJ&#10;qb/55myK9HkfRiz5l9ApIVZvv5Ovy997NiJs6USY7SKy8tqK5GY0aYOm++zd99beNfdo4ix2Jzrp&#10;+nUwHwRsBaM9eitFhjb1dYyOc7RMu03ltZ1Hg3Dq9u7hU7aWBA2/HqU/trAD47QeiXRau+Jyvtdx&#10;Nsn3u9nX+edVSLFfh3EU1vLc/DlTPprM/C5E9N6M2HNbsL3kb5v03sHNu27sgDKtfg65efwccZv+&#10;BGFPxK2cZUjP9ngSOX7EHu13N9/ShwXFNm0o27Us787mW+YXuand5vw+zC23WOVCEFC23T0q7hkF&#10;xpDf48WMLkznTtqJqpXzI5lXm1M8LaoOd9kfo1D8mV/UFPDC/LsXUDyQ4iB0CvPzKXrilrkYpB1i&#10;Xq5232oqOAezRGRZNp2Lat9AoUCfp5hveh3K4f4epD86BxGc36FA1sn8HuMKl6OQn+XIJL0vsvTs&#10;i0Q9CzXwhC1V4tp3Y4hYPo4Yf2b1H9UEtn69nnYcUUDuH7/N/w5mSXVWYZDicw/3XFV5oJi22aIw&#10;P4dQJ1hdfP/b3wfSrC/K0NkFZ6BxNq7Ap5JZgsb0bnR47yfc856rDsl3+zNcRto2MF3TjymqVGbD&#10;bdlcamJy9kDhZjdDtMi7sVuS120fRLjb4CbyXF+zIljJKRqeaN2NBhrUUWvzRnwXcTdvs8qHENb5&#10;8kpgjbIW12ZMdHUygvkFlMLmC0h3ADE63xSFhxEdTAeFEbf0HMEyQmw732PRIFgGi1FzVoZLiI6p&#10;VbD3PhcFkVtdU8/8SaSX3JNmfcY05T5yg2K2YmXZIrX27lPyWxm+RTufqQyN6QfQ5lb2bk+4DrB7&#10;5sBibQWejjL+epXEsLAUOk2VXY7m0keJweL+d1vvzx/g3Vfm750dwYJSojWNxKLrkSd6RjG1zD+h&#10;DKOvIDmotWLgfJbLjBZspKuTiXg/RTvacYigLicu5EGsKGUmbMtZnyYp87u7Lfr/RZkqVrv3j5RY&#10;5W23d/8uqUvlYyjn93vQ+Ph2WNzcoRTTzdRxJT1GQ7BWEBXUg4aamCrgZhT9YPOnl5dppyTV6a+u&#10;IJ623d9ccmQlnzchd4JNqO/zHlIbjDKrgiqh8bfx+7+8TtvUPNIWFyHRzIhxHd6Jxv8HZVVEJ+U8&#10;u0U5oLlnPmtjI/EFSYiW4QREGU+meIqOuT2chQjace6ZkHyCxCb/+xa0QOLoasr6V6OMon+LMkzs&#10;0qasBgTEUVralVQUNGL1OWQIMJTm5hoRrP9+jRbsVjTvsJbD/nGIG70S7YabI2L2ImKu+6ZKX0Ak&#10;WLNZkH+FduthENCYfJ54DJXVe1eila6uLTcQ9aWTJalT9Edxo/0D0rvauJeVP4aI5rbMTRiWVehW&#10;pO54AkXd6zBl3YCMRI9quL+HiNppSKf9Q0Q0J5DO99i8jL7nQAPuRSI5QBiZ81pJvCEoUPoydHT9&#10;fkQuy8S1t6IGHIcImxXg3QT67GD+uTMyR6+mvQnV4wrgdciV4BFI8X0oEnXKLDdWhqV+WYMU/+fm&#10;ZW2JRKWVyXPrEKGeRF7HHyfhzuY4kymoj76NuMq6yep1LYdRPCHJo060zIindn+botg4CBebEXVX&#10;Po3RoPCB+FYuaG7tPvP2UlxN5ILbvvdC5KRsfVW1KHdACuq5jhs9nWithuGIlhnQ/hsRG5vbZfBj&#10;/tf5lSJQHjLkdY2WP+9UYsLD0REsqCRav0OL4EQkBqaK6d3RLvgPKNXKKcSDSAMieL5BWyBF4o/a&#10;1smQKJDvRj5k383/3wKJIFuinXkjxFGYjup2FD5zHersI/L2PCG/38MsgWcjA8SFJMR1jsNu/CB8&#10;jEiw2iIVd9piKeqrzzBT3FofKNvQeigsqg0ubr5lBi6iXG/o+9I27FWIAxopknVo62TYCecJ3BdR&#10;vvW59l+zd/bQRm9RIe1jCdui5JQb40r+Dp0ifQLxHDg72ThDVqovoEjuzyJCcgmypJh3rTXmycgC&#10;MlCKjpK6WXkgbmR12WPExbcNIkDPQ1xImV4lIPHzRJStAuaXWKUT9hzUny90t8zFZLMJdhJRZ5Sm&#10;mp5PpLu46YsyYjBtE1oRrKS/LV2yGXSq6hYoZoCYi0kRkAP1xcjI0FYMK5SRKfdxhjbs9yNVzqj0&#10;b1nJ32vR5vcF4qnWGczhDugWpfcz+jbKGHpSXik72j4Qldb7ISfUs/IKH04xn/YYUlxvaF+0SC5W&#10;FuPnLWAW01emc1iBxNYv5/X4MDJfm+UsxbeRju7dOFGo6uivecKbkKV0ENFsGJyDcnlNQ//Q14WE&#10;gObNHk035hiGw7qGKCHUweb6XGMdcdEPC88tv5+5PSdzGkknN6JDLCBufnPLsldM2LuQTudIlIFw&#10;nHj6ss/kuBFSuJ5CcYKtQ3qsMtl4ENjiNUJpaWU3Q8nFXo1M2hci/ZoRSfOah6J+5Qyky3o6w030&#10;ucISpAN4OtokLPe+d4ydDYxLvhH1kYVb1JUd5unysI1xN6LVrGyC2kb2B6S0HhTXIE4k1ctA5LQz&#10;NN93I7rtzBWHlVHkUoZ5j/Wnbe7PInLRNpcyhi/fYHrPe5BR7GZX7wAjjhgvQ4UYNo50W3+O9Fav&#10;B/6UGM9mnWCV9Z1g97wNKS0vRMrvG1BD76JeGW/+UpsiC9j2iF2268D8u7TjLdzIZ1gATYaTmCm6&#10;rtf0ME5MMUX4Oeik7K8QraN1PmNtsRT5lj2LhZVtwtrUS77bhZhEcQNmtn0dmmM3IOvWoFiHiJ3P&#10;QFpFuHdCFtxR58ZKnX7PRPneZxO/6DeB61EEyzeJZy0asRmGaHk/xmtRFt6ziVb3LMuyHswDwTIk&#10;ym+vkPwVoqZHIq7paWiwTScCMzsgoNN5zAG1h5Toq1EIwR9Rnve1FI8W2hCZXDfLn9+UaO1I32FB&#10;0948bSE+tyDR77PEQ2DtvgUDN2nNWe8sxD2egEz9XrnuJ2Qd12VtDWjRfwZxzD76wGd1TfvVnk+z&#10;1Y4aVvaS5H/TG6WGEoPNh2vITwcacOOZRIaiB+f/e6V1WtBylHYozQdfxSVaWYMaUK5BUQyPduWU&#10;obLcJJ/VEqQeORol8XwJ4hStzoOcqGTS1TRKv/QmRFyt701XNj8cVhkSrssa96v8egdyKvsz5Hbg&#10;uZl0IC24c4wYPgPFjq+j+E0ihBGqgAjgmUiv9t9IXPBlR+XYAtLdlFhub0Jexh9CXtBPQu4cXn9X&#10;R7gyZCn9OvJpu8x939fXlcDKug9tKnZwyFx11hTioO9Ivt8FbWR3Esfdt7uHNrLfMhw3YkHtf040&#10;x6cK+JDXb1PkE+axFkkJVZkM1iDJ4j7abZBmsfwWcrdYTX2fb4T6zOZDvw/yuWR1H0cSzauQJe+V&#10;SEraoWW9DL9H0snHiEfyWfjODOK8IFZWhYf7GLLmPAZlNj0UmVPLuAK/wNrqZXw5njvyk/d6xEGd&#10;iryGL6XIdQWozRE/35axStSEfzwIpZTeC7H3dhLyMuJueRsy11+IxL9fEyc1uP6v6gvLp4+43C3y&#10;vy0yYi5xH6q/+RJtgRal6V9mVBUtmNWIOLTmsPI+Hkd9tyUx/KsOd+WX6XCXUuyfFKZ7vJc8wLym&#10;fpkTC5ch8bMJY4gQmcU8SyMxEsOVlT+GxvZhyAtgn/xzs7xNGSLCq5Ef4+/Qevol0Tm3wGWWtWtB&#10;ECyoXVCGFWhBHYWI1z5Iebp53UMt0SP6WF2CiNNvkLf2XRSTlnll/YLiptqioq9TsaVsQyhFmz6Y&#10;qwyvQ2BQkar1GK+vNg5wVN5Iy29RtqXvqUOfy20TorZQV1saEFomrm2ACNaO+bUzoubLEFu6NeW7&#10;21XIohXyzyuRmHQtLZSsJbqZBbMSB4GLNxyYQEEUNUewmOd7DqbqglZtbVXw/YhgDXr+Qu6rBTPn&#10;E9T3cRhkLi1UglWAW1z9r+bx9X0fkAosSoKVou3EXowcZYJ0o2lq0P1ifOcTczmXFuXsSyj5SHF/&#10;J0wdOixmLEqCVYc21P1+wCV06NChQ4cOHTp06NChQ4cOHTp06NChQ4cOHTp06NChQ4cOHTp06NCh&#10;Q4cOHTp06NChQ4cOHTp06NChQ4cOHTp06NChQ4cOHTp06NChQwP+P/Nbmg81T5f9AAAAAElFTkSu&#10;QmCC&#10;"
-                  id="image1"
-                />
-                <path style="fill: #000000" id="path1" />
-              </g>
-            </svg>
-
-            <p
-              class="ml-6 text-base md:ml-10 font-cormorant italic text-white/70 md:text-xl"
-            >
-              Officiellt certifierade av <br />
-              Havsglans inom <br />
-              professionell båtvård
-            </p>
-          </div>
         </div>
       </div>
     </header>
 
-    <section id="tjanster" class="py-24 lg:py-32">
-      <div class="mx-auto max-w-7xl px-6">
-        <div class="mb-16 flex flex-col items-center text-center">
-          <p class="font-jost font-semibold tracking-[0.2em] text-primary">
-            VÅRA TJÄNSTER
-          </p>
-
-          <h2 class="mt-3 font-cormorant text-4xl lg:text-5xl">
-            Expertis inom två områden
-          </h2>
-        </div>
-        <!-- Båtservice -->
-        <div class="mb-20">
-          <div class="mb-10 flex items-center gap-4">
-            <div class="h-px w-12 bg-primary"></div>
-            <p
-              class="font-jost text-xs font-semibold tracking-[0.25em] uppercase text-gray-500"
-            >
-              Båtservice & Marin
-            </p>
-          </div>
-
-          <div class="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
-            <!-- Kort -->
-            <article
-              class="overflow-hidden border border-gray-200 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl"
-            >
-              <img
-                src="/img/polering-400x400.avif"
-                alt="Polering av båt"
-                class="h-64 w-full object-cover"
-              />
-
-              <div class="p-8">
-                <p class="mb-3 font-jost text-xs tracking-[0.2em] text-primary">
-                  01
-                </p>
-
-                <h3 class="font-cormorant text-3xl">Polering</h3>
-
-                <p class="mt-5 font-jost leading-7 text-gray-600">
-                  Polering av båt är en grundlig process som förbättrar både
-                  utseende och hållbarhet. Det innebär att man noggrant tar bort
-                  oxidation, repor och smuts från båtens yta för att återställa
-                  glansen.
-                </p>
-
-                <a
-                  href="#"
-                  class="mt-8 inline-flex items-center gap-2 font-jost text-sm font-semibold uppercase tracking-wider"
-                >
-                  Läs mer
-                  <span>→</span>
-                </a>
-              </div>
-            </article>
-            <article
-              class="overflow-hidden border border-gray-200 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl"
-            >
-              <img
-                src="/img/rekond-pa-bat.avif"
-                alt="Rekonditionering av båt"
-                class="h-64 w-full object-cover"
-              />
-
-              <div class="p-8">
-                <p class="mb-3 font-jost text-xs tracking-[0.2em] text-primary">
-                  02
-                </p>
-
-                <h3 class="font-cormorant text-3xl">Rekonditionering</h3>
-
-                <p class="mt-5 font-jost leading-7 text-gray-600">
-                  Rekond av båt innebär en noggrann rengöring och polering av
-                  båtens ytor för att återställa dess glans och skydda den mot
-                  väderpåverkan. Det inkluderar även små reparationer och
-                  applicering av skyddande lager.
-                </p>
-
-                <a
-                  href="#"
-                  class="mt-8 inline-flex items-center gap-2 font-jost text-sm font-semibold uppercase tracking-wider"
-                >
-                  Läs mer
-                  <span>→</span>
-                </a>
-              </div>
-            </article>
-          </div>
-        </div>
-        <!-- Städservice & Hem -->
-        <div class="mb-20">
-          <div class="mb-10 flex items-center gap-4">
-            <div class="h-px w-12 bg-primary"></div>
-            <p
-              class="font-jost text-xs font-semibold tracking-[0.25em] uppercase text-gray-500"
-            >
-              Städservice & Hem
-            </p>
-          </div>
-
-          <div class="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
-            <!-- Kort -->
-            <article
-              class="overflow-hidden border border-gray-200 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl"
-            >
-              <img
-                src="/img/hemstäd.avif"
-                alt="Hemstädning"
-                class="h-64 w-full object-cover"
-              />
-
-              <div class="p-8">
-                <p class="mb-3 font-jost text-xs tracking-[0.2em] text-primary">
-                  01
-                </p>
-
-                <h3 class="font-cormorant text-3xl">Hemstädning</h3>
-
-                <p class="mt-5 font-jost leading-7 text-gray-600">
-                  Från dammning och dammsugning till djuprengöring av de
-                  svåråtkomliga platserna, vi förvandlar ditt hem till en
-                  gnistrande fristad du kan vara stolt över!
-                </p>
-
-                <a
-                  href="#"
-                  class="mt-8 inline-flex items-center gap-2 font-jost text-sm font-semibold uppercase tracking-wider"
-                >
-                  Läs mer
-                  <span>→</span>
-                </a>
-              </div>
-            </article>
-            <article
-              class="overflow-hidden border border-gray-200 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl"
-            >
-              <img
-                src="/img/stadning-byggnation-523x348.avif"
-                alt="Städning efter byggnation"
-                class="h-64 w-full object-cover"
-              />
-
-              <div class="p-8">
-                <p class="mb-3 font-jost text-xs tracking-[0.2em] text-primary">
-                  02
-                </p>
-
-                <h3 class="font-cormorant text-3xl">
-                  Städning efter byggnation
-                </h3>
-
-                <p class="mt-5 font-jost leading-7 text-gray-600">
-                  Håll din arbetsmiljö fräsch och produktiv med våra
-                  skräddarsydda kontorsstädningstjänster. Vi ser till att din
-                  arbetsplats inte bara ser ren ut utan också känns inbjudande
-                  för både dig och dina anställda.
-                </p>
-
-                <a
-                  href="#"
-                  class="mt-8 inline-flex items-center gap-2 font-jost text-sm font-semibold uppercase tracking-wider"
-                >
-                  Läs mer
-                  <span>→</span>
-                </a>
-              </div>
-            </article>
-            <article
-              class="overflow-hidden border border-gray-200 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl"
-            >
-              <img
-                src="/img/kontorstadning-523x348.avif"
-                alt="Hemstädning"
-                class="h-64 w-full object-cover"
-              />
-
-              <div class="p-8">
-                <p class="mb-3 font-jost text-xs tracking-[0.2em] text-primary">
-                  03
-                </p>
-
-                <h3 class="font-cormorant text-3xl">Kontorsstädning</h3>
-
-                <p class="mt-5 font-jost leading-7 text-gray-600">
-                  Efter ett byggprojekt är det sista du vill ta itu med röran
-                  som lämnats kvar. Vi kommer att skrubba, torka och polera
-                  tills allt gnistrar, så att du kan njuta av ditt nya utrymme
-                  utan krångel!
-                </p>
-
-                <a
-                  href="#"
-                  class="mt-8 inline-flex items-center gap-2 font-jost text-sm font-semibold uppercase tracking-wider"
-                >
-                  Läs mer
-                  <span>→</span>
-                </a>
-              </div>
-            </article>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="om-oss" class="py-24">
-      <div
-        class="mx-auto grid max-w-7xl items-stretch gap-16 px-6 lg:grid-cols-2"
-      >
-        <!-- Bild -->
-        <div class="overflow-hidden">
-          <img
-            src="/img/gasthamn_atlantica.avif"
-            alt="Marina"
-            class="h-full w-full object-cover"
-          />
-        </div>
-
-        <!-- Innehåll -->
-        <div>
-          <!-- Etikett -->
-          <p
-            class="font-jost text-xs font-semibold uppercase tracking-[0.25em] text-primary"
-          >
-            VARFÖR VÄLJA OSS
-          </p>
-
-          <!-- Rubrik -->
-          <h2 class="mt-4 font-cormorant text-5xl leading-tight">
-            Kvalitet du kan lita på
-          </h2>
-
-          <div class="mt-8 h-px w-14 bg-primary"></div>
-
-          <!-- Beskrivning -->
-          <p class="mt-8 font-jost leading-8 text-gray-600">
-            Vi är välutbildade och väljer noggrant ut de bästa produkterna och
-            metoderna för varje uppdrag. Vårt mål är inte bara ett rent resultat
-            utan en upplevelse som överträffar dina förväntningar.
-          </p>
-
-          <!-- Statistik -->
-          <div class="mt-16 grid gap-10 sm:grid-cols-2">
-            <div>
-              <h3 class="font-cormorant text-5xl">8+</h3>
-
-              <p
-                class="mt-2 font-jost text-xs font-semibold uppercase tracking-[0.2em] text-primary"
-              >
-                Års erfarenhet
-              </p>
-
-              <p class="mt-4 font-jost text-gray-600">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </p>
+    <section class="relative overflow-hidden bg-[#F8FAFC] ">
+        <nav aria-label="Breadcrumb" class="py-16">
+            <div class="mx-auto max-w-7xl px-6">
+              <ol class="flex items-center gap-2 font-jost text-sm text-gray-500">
+                <li>
+                  <a href="index.html" class="transition hover:text-primary">Hem</a>
+                </li>
+          
+                <li>›</li>
+          
+                <li aria-current="page" class="text-[#0B1A2B] font-medium">
+                  Kontakt
+                </li>
+          
+    
+              </ol>
             </div>
-
-            <div>
-              <h3 class="font-cormorant text-5xl">500+</h3>
-
-              <p
-                class="mt-2 font-jost text-xs font-semibold uppercase tracking-[0.2em] text-primary"
-              >
-                Nöjda kunder
-              </p>
-
-              <p class="mt-4 font-jost text-gray-600">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </p>
-            </div>
-
-            <div>
-              <h3 class="font-cormorant text-5xl">100%</h3>
-
-              <p
-                class="mt-2 font-jost text-xs font-semibold uppercase tracking-[0.2em] text-primary"
-              >
-                Nöjd garanti
-              </p>
-
-              <p class="mt-4 font-jost text-gray-600">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </p>
-            </div>
-
-            <div>
-              <h3 class="font-cormorant text-5xl">2</h3>
-
-              <p
-                class="mt-2 font-jost text-xs font-semibold uppercase tracking-[0.2em] text-primary"
-              >
-                Tjänsteområden
-              </p>
-
-              <p class="mt-4 font-jost text-gray-600">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="bg-[#0F1C2E] py-28 text-white">
-      <div class="mx-auto max-w-7xl px-6">
-        <!-- Rubrik -->
-        <div class="mx-auto max-w-2xl text-center">
-          <p
-            class="font-jost text-xs font-semibold uppercase tracking-[0.25em] text-white/80"
-          >
-            Så fungerar det
-          </p>
-
-          <h2 class="mt-4 font-cormorant text-5xl">Vår process</h2>
-
-          <div class="mx-auto mt-8 h-px w-12 bg-primary"></div>
-
-          <p class="mt-8 font-jost leading-8 text-white/70">
-            Från första kontakt till avslutat uppdrag gör vi processen enkel,
-            trygg och transparent.
-          </p>
-        </div>
-
-        <!-- Steg -->
-        <div class="mt-24 grid gap-12 md:grid-cols-2 xl:grid-cols-4">
-          <!-- Steg 1 -->
-          <article>
-            <div class="mb-8 flex items-center gap-4">
-              <div class="h-px w-10 bg-primary"></div>
-
-              <span class="font-cormorant text-5xl text-primary"> 1 </span>
-            </div>
-
-            <h3 class="font-jost text-xl font-semibold">Kontakta oss</h3>
-
-            <p class="mt-5 font-jost leading-8 text-white/70">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-          </article>
-
-          <!-- Steg 2 -->
-          <article>
-            <div class="mb-8 flex items-center gap-4">
-              <div class="h-px w-10 bg-primary"></div>
-
-              <span class="font-cormorant text-5xl text-primary"> 2 </span>
-            </div>
-
-            <h3 class="font-jost text-xl font-semibold">Offert</h3>
-
-            <p class="mt-5 font-jost leading-8 text-white/70">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-          </article>
-
-          <!-- Steg 3 -->
-          <article>
-            <div class="mb-8 flex items-center gap-4">
-              <div class="h-px w-10 bg-primary"></div>
-
-              <span class="font-cormorant text-5xl text-primary"> 3 </span>
-            </div>
-
-            <h3 class="font-jost text-xl font-semibold">Vi utför arbetet</h3>
-
-            <p class="mt-5 font-jost leading-8 text-white/70">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-          </article>
-
-          <!-- Steg 4 -->
-          <article>
-            <div class="mb-8 flex items-center gap-4">
-              <div class="h-px w-10 bg-primary"></div>
-
-              <span class="font-cormorant text-5xl text-primary"> 4 </span>
-            </div>
-
-            <h3 class="font-jost text-xl font-semibold">Slutförande</h3>
-
-            <p class="mt-5 font-jost leading-8 text-white/70">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-          </article>
-        </div>
-      </div>
-    </section>
-    <section class="quote-section">
-      <div class="quote-overlay"></div>
+          </nav> 
 
       <div
-        class="relative z-10 mx-auto flex max-w-4xl flex-col items-center px-6 py-44 text-center"
-      >
-        <blockquote
-          class="font-cormorant text-4xl italic leading-relaxed text-white lg:text-5xl"
-        >
-          "Vi är stolta över vår uppmärksamhet på detaljer och vår användning av
-          de bästa produkterna på marknaden."
-        </blockquote>
-
-        <p
-          class="mt-10 font-jost text-xs font-semibold uppercase tracking-[0.3em] text-white/80"
-        >
-          Boss Båt & Städservice Svea
-        </p>
-      </div>
-    </section>
-    <section id="recensioner" class="py-28">
-      <div class="mx-auto max-w-7xl px-6">
-        <!-- Rubrik -->
-        <div class="mx-auto mb-20 max-w-2xl text-center">
-          <p
-            class="font-jost text-xs font-semibold uppercase tracking-[0.3em] text-primary"
-          >
-            Kundrecensioner
-          </p>
-
-          <h2 class="mt-4 font-cormorant text-5xl">Vad våra kunder säger</h2>
-
-          <div class="mx-auto mt-8 h-px w-12 bg-primary"></div>
-        </div>
-
-        <!-- Kort -->
-        <div class="grid gap-8 lg:grid-cols-3">
-          <!-- Kort 1 -->
-          <article
-            class="group border border-gray-200 bg-white p-10 transition-all duration-300 hover:-translate-y-2 hover:border-primary/30 hover:shadow-xl"
-          >
-            <!-- Stjärnor -->
-            <div class="mb-8 flex gap-1 text-primary">
-              <svg class="h-5 w-5 fill-current" viewBox="0 0 20 20">
-                <path
-                  d="M9.049.927l2.093 6.44h6.77l-5.478 3.98 2.093 6.44L9.05 13.807 3.57 17.787l2.093-6.44L.185 7.367h6.77z"
-                />
-              </svg>
-
-              <svg class="h-5 w-5 fill-current" viewBox="0 0 20 20">
-                <path
-                  d="M9.049.927l2.093 6.44h6.77l-5.478 3.98 2.093 6.44L9.05 13.807 3.57 17.787l2.093-6.44L.185 7.367h6.77z"
-                />
-              </svg>
-
-              <svg class="h-5 w-5 fill-current" viewBox="0 0 20 20">
-                <path
-                  d="M9.049.927l2.093 6.44h6.77l-5.478 3.98 2.093 6.44L9.05 13.807 3.57 17.787l2.093-6.44L.185 7.367h6.77z"
-                />
-              </svg>
-
-              <svg class="h-5 w-5 fill-current" viewBox="0 0 20 20">
-                <path
-                  d="M9.049.927l2.093 6.44h6.77l-5.478 3.98 2.093 6.44L9.05 13.807 3.57 17.787l2.093-6.44L.185 7.367h6.77z"
-                />
-              </svg>
-
-              <svg class="h-5 w-5 fill-current" viewBox="0 0 20 20">
-                <path
-                  d="M9.049.927l2.093 6.44h6.77l-5.478 3.98 2.093 6.44L9.05 13.807 3.57 17.787l2.093-6.44L.185 7.367h6.77z"
-                />
-              </svg>
-            </div>
-
-            <blockquote
-              class="font-cormorant text-xl italic leading-9 text-gray-600"
-            >
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-              posuere erat a ante venenatis dapibus posuere velit aliquet."
-            </blockquote>
-
-            <div class="my-10 h-px bg-gray-200"></div>
-
-            <div class="flex items-center gap-4">
-              <div
-                class="flex h-12 w-12 items-center justify-center rounded-full bg-primary text-sm font-bold text-white"
-              >
-                M
-              </div>
-
-              <div>
-                <h3 class="font-jost font-semibold">Magnus Lindqvist</h3>
-
-                <p class="mt-1 font-jost text-sm text-gray-500">
-                  Båtägare • Göteborg
-                </p>
-              </div>
-            </div>
-          </article>
-
-          <!-- Kort 2 -->
-          <article
-            class="group border border-gray-200 bg-white p-10 transition-all duration-300 hover:-translate-y-2 hover:border-primary/30 hover:shadow-xl"
-          >
-            <div class="mb-8 text-primary text-lg">★★★★★</div>
-
-            <blockquote
-              class="font-cormorant text-xl italic leading-9 text-gray-600"
-            >
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua."
-            </blockquote>
-
-            <div class="my-10 h-px bg-gray-200"></div>
-
-            <div class="flex items-center gap-4">
-              <div
-                class="flex h-12 w-12 items-center justify-center rounded-full bg-primary text-sm font-bold text-white"
-              >
-                A
-              </div>
-
-              <div>
-                <h3 class="font-jost font-semibold">Anna Svensson</h3>
-
-                <p class="mt-1 font-jost text-sm text-gray-500">
-                  Villaägare • Skövde
-                </p>
-              </div>
-            </div>
-          </article>
-
-          <!-- Kort 3 -->
-          <article
-            class="group border border-gray-200 bg-white p-10 transition-all duration-300 hover:-translate-y-2 hover:border-primary/30 hover:shadow-xl"
-          >
-            <div class="mb-8 text-primary text-lg">★★★★★</div>
-
-            <blockquote
-              class="font-cormorant text-xl italic leading-9 text-gray-600"
-            >
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis
-              autem vel eum iure reprehenderit qui in ea voluptate."
-            </blockquote>
-
-            <div class="my-10 h-px bg-gray-200"></div>
-
-            <div class="flex items-center gap-4">
-              <div
-                class="flex h-12 w-12 items-center justify-center rounded-full bg-primary text-sm font-bold text-white"
-              >
-                E
-              </div>
-
-              <div>
-                <h3 class="font-jost font-semibold">Erik Bergström</h3>
-
-                <p class="mt-1 font-jost text-sm text-gray-500">
-                  Företagskund • Stockholm
-                </p>
-              </div>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-    <section id="galleri" class="py-32">
-      <div class="mx-auto max-w-7xl px-6">
-        <!-- Rubrik -->
-        <div class="mx-auto mb-20 max-w-2xl text-center">
-          <p
-            class="font-jost text-xs font-semibold uppercase tracking-[0.3em] text-primary"
-          >
-            Galleri
-          </p>
-
-          <h2 class="mt-4 font-cormorant text-5xl lg:text-6xl">
-            Vårt arbete i bilder
-          </h2>
-
-          <div class="mx-auto mt-8 h-px w-12 bg-primary"></div>
-
-          <p class="mt-8 font-jost leading-8 text-gray-600">
-            Ett urval av våra senaste projekt inom båtvård och professionell
-            städservice.
-          </p>
-        </div>
-
-        <!-- Galleri -->
-        <div
-          class="grid auto-rows-62.5 grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-12"
-        >
-          <!-- Stor vänster -->
-          <a
-            href="#"
-            class="group relative overflow-hidden lg:col-span-6 lg:row-span-2"
-          >
-            <img
-              src="/img/hero.webp"
-              alt=""
-              class="h-full w-full object-cover transition duration-700 group-hover:scale-110"
-            />
-
-            <div
-              class="absolute inset-0 bg-black/15 transition duration-500 group-hover:bg-black/35"
-            ></div>
-          </a>
-
-          <!-- Bild -->
-          <a href="#" class="group relative overflow-hidden lg:col-span-3">
-            <img
-              src="/img/hero.webp"
-              alt=""
-              class="h-full w-full object-cover transition duration-700 group-hover:scale-110"
-            />
-
-            <div
-              class="absolute inset-0 bg-black/15 transition duration-500 group-hover:bg-black/35"
-            ></div>
-          </a>
-
-          <!-- Bild -->
-          <a href="#" class="group relative overflow-hidden lg:col-span-3">
-            <img
-              src="/img/hero.webp"
-              alt=""
-              class="h-full w-full object-cover transition duration-700 group-hover:scale-110"
-            />
-
-            <div
-              class="absolute inset-0 bg-black/15 transition duration-500 group-hover:bg-black/35"
-            ></div>
-          </a>
-
-          <!-- Bild -->
-          <a href="#" class="group relative overflow-hidden lg:col-span-3">
-            <img
-              src="/img/hero.webp"
-              alt=""
-              class="h-full w-full object-cover transition duration-700 group-hover:scale-110"
-            />
-
-            <div
-              class="absolute inset-0 bg-black/15 transition duration-500 group-hover:bg-black/35"
-            ></div>
-          </a>
-
-          <!-- Bild -->
-          <a href="#" class="group relative overflow-hidden lg:col-span-3">
-            <img
-              src="/img/hero.webp"
-              alt=""
-              class="h-full w-full object-cover transition duration-700 group-hover:scale-110"
-            />
-
-            <div
-              class="absolute inset-0 bg-black/15 transition duration-500 group-hover:bg-black/35"
-            ></div>
-          </a>
-
-          <!-- Stor nederst -->
-          <a href="#" class="group relative overflow-hidden lg:col-span-12">
-            <img
-              src="/img/hero.webp"
-              alt=""
-              class="h-full w-full object-cover transition duration-700 group-hover:scale-110"
-            />
-
-            <div
-              class="absolute inset-0 bg-black/15 transition duration-500 group-hover:bg-black/35"
-            ></div>
-          </a>
-        </div>
-      </div>
-    </section>
-    <section id="faq" class="py-32">
-      <div class="mx-auto max-w-4xl px-6">
-        <!-- Rubrik -->
-        <div class="mb-20 text-center">
-          <p
-            class="font-jost text-xs font-semibold uppercase tracking-[0.3em] text-primary"
-          >
-            Vanliga frågor
-          </p>
-
-          <h2 class="mt-4 font-cormorant text-5xl lg:text-6xl">
-            Frågor & svar
-          </h2>
-
-          <div class="mx-auto mt-8 h-px w-12 bg-primary"></div>
-        </div>
-
-        <!-- FAQ -->
-
-        <details class="group border-b border-gray-200 py-6">
-          <summary
-            class="flex cursor-pointer list-none items-center justify-between"
-          >
-            <span class="font-jost text-lg font-semibold">
-              Vilket område täcker ni?
-            </span>
-
-            <span class="text-2xl text-primary transition group-open:rotate-45">
-              +
-            </span>
-          </summary>
-
-          <p class="mt-6 max-w-3xl font-jost leading-8 text-gray-600">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-            posuere erat a ante venenatis dapibus posuere velit aliquet.
-          </p>
-        </details>
-
-        <details class="group border-b border-gray-200 py-6">
-          <summary
-            class="flex cursor-pointer list-none items-center justify-between"
-          >
-            <span class="font-jost text-lg font-semibold">
-              Gäller RUT-avdrag för städtjänster?
-            </span>
-
-            <span class="text-2xl text-primary transition group-open:rotate-45">
-              +
-            </span>
-          </summary>
-
-          <p class="mt-6 font-jost leading-8 text-gray-600">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </p>
-        </details>
-
-        <details class="group border-b border-gray-200 py-6">
-          <summary
-            class="flex cursor-pointer list-none items-center justify-between"
-          >
-            <span class="font-jost text-lg font-semibold">
-              Hur lång tid tar en båtrekonditionering?
-            </span>
-
-            <span class="text-2xl text-primary transition group-open:rotate-45">
-              +
-            </span>
-          </summary>
-
-          <p class="mt-6 font-jost leading-8 text-gray-600">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </p>
-        </details>
-
-        <details class="group border-b border-gray-200 py-6">
-          <summary
-            class="flex cursor-pointer list-none items-center justify-between"
-          >
-            <span class="font-jost text-lg font-semibold">
-              Använder ni miljövänliga produkter?
-            </span>
-
-            <span class="text-2xl text-primary transition group-open:rotate-45">
-              +
-            </span>
-          </summary>
-
-          <p class="mt-6 font-jost leading-8 text-gray-600">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </p>
-        </details>
-
-        <details class="group border-b border-gray-200 py-6">
-          <summary
-            class="flex cursor-pointer list-none items-center justify-between"
-          >
-            <span class="font-jost text-lg font-semibold">
-              Vad händer om jag inte är nöjd?
-            </span>
-
-            <span class="text-2xl text-primary transition group-open:rotate-45">
-              +
-            </span>
-          </summary>
-
-          <p class="mt-6 font-jost leading-8 text-gray-600">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </p>
-        </details>
-      </div>
-    </section>
-    <section class="relative overflow-hidden py-40">
-      <!-- Bakgrund -->
-      <!-- Bakgrund -->
-      <div
-        class="absolute inset-0 bg-gradient-to-br from-[#06101C] via-[#0B1A2B] to-[#081625]"
+        class="absolute left-0 top-0 h-72 w-72 rounded-full bg-primary/5 blur-3xl"
       ></div>
 
-      <!-- Glow vänster -->
       <div
-        class="absolute left-0 top-0 h-96 w-96 -translate-x-1/2 -translate-y-1/2 rounded-full bg-primary/20 blur-3xl"
+        class="absolute right-0 bottom-0 h-72 w-72 rounded-full bg-[#0B1A2B]/5 blur-3xl"
       ></div>
 
-      <!-- Glow höger -->
-      <div
-        class="absolute bottom-0 right-0 h-80 w-80 translate-x-1/3 translate-y-1/3 rounded-full bg-white/5 blur-3xl"
-      ></div>
-
-      <!-- Tunn linje -->
-      <div class="absolute top-0 left-0 h-px w-full bg-primary/30"></div>
-
-      <div
-        class="relative z-10 mx-auto grid max-w-7xl items-center gap-24 px-6 lg:grid-cols-2"
-      >
+      <div class="mx-auto grid max-w-7xl gap-20 px-6 lg:grid-cols-2">
         <!-- Vänster -->
+
         <div>
           <p
-            class="font-jost text-xs font-semibold uppercase tracking-[0.3em] text-white/80"
+            class="font-jost text-xs font-semibold uppercase tracking-[0.35em] text-primary"
           >
-            Kontakta oss
+            Kontaktinformation
           </p>
 
-          <h2
-            class="mt-5 max-w-xl font-cormorant text-5xl leading-tight text-white lg:text-7xl"
-          >
-            Redo att boka eller få en offert?
+          <h2 class="mt-5 font-cormorant text-5xl text-[#0B1A2B]">
+            Vi är här för dig
           </h2>
 
-          <p class="mt-8 max-w-xl font-jost leading-8 text-white/70">
-            Hör av dig redan idag så återkommer vi inom 24 timmar med ett
-            kostnadsfritt och skräddarsytt offertförslag.
+          <div class="mt-6 h-[2px] w-20 bg-primary"></div>
+
+          <p class="mt-8 max-w-md font-jost leading-8 text-gray-600">
+            Har du frågor eller vill du få en kostnadsfri offert? Hör av dig så
+            återkommer vi så snart som möjligt.
           </p>
 
-          <div class="mt-12 flex flex-col gap-4 sm:flex-row">
-            <a
-              href="#"
-              class="bg-primary px-8 py-4 text-center font-jost font-semibold uppercase tracking-wider text-white transition hover:opacity-90"
-            >
-              Begär offert
-            </a>
+          <div class="mt-12 space-y-8">
+            <!-- E-post -->
 
-            <a
-              href="mailto:info@bossbatstad.se"
-              class="border border-white/30 px-8 py-4 text-center font-jost font-semibold uppercase tracking-wider text-white transition hover:bg-white hover:text-[#081625]"
-            >
-              Skicka mejl
-            </a>
+            <div class="flex gap-5">
+              <div
+                class="flex h-14 w-14 items-center justify-center border border-gray-200 bg-[#F8FAFC]"
+              >
+                ✉
+              </div>
+
+              <div>
+                <p
+                  class="font-jost text-xs font-semibold uppercase tracking-[0.25em] text-primary"
+                >
+                  E-post
+                </p>
+
+                <a
+                  href="mailto:batochstadservicesvea@gmail.com"
+                  class="mt-2 inline-block font-jost text-[#0B1A2B] hover:text-primary"
+                >
+                  batochstadservicesvea@gmail.com
+                </a>
+              </div>
+            </div>
+
+            <!-- Område -->
+
+            <div class="flex gap-5">
+              <div
+                class="flex h-14 w-14 items-center justify-center border border-gray-200 bg-[#F8FAFC]"
+              >
+                📍
+              </div>
+
+              <div>
+                <p
+                  class="font-jost text-xs font-semibold uppercase tracking-[0.25em] text-primary"
+                >
+                  Område
+                </p>
+
+                <p class="mt-2 font-jost text-[#0B1A2B]">Enköping</p>
+              </div>
+            </div>
+
+            <!-- Öppettider -->
+
+            <div class="flex gap-5">
+              <div
+                class="flex h-14 w-14 items-center justify-center border border-gray-200 bg-[#F8FAFC]"
+              >
+                🕒
+              </div>
+
+              <div>
+                <p
+                  class="font-jost text-xs font-semibold uppercase tracking-[0.25em] text-primary"
+                >
+                  Öppettider
+                </p>
+
+                <p class="mt-2 font-jost leading-8 text-[#0B1A2B]">
+                  Måndag–Fredag 08:00–18:00
+                  <br />
+                  Lördag 09:00–15:00
+                </p>
+              </div>
+            </div>
+
+            <!-- Garanti -->
+
+            <div class="flex gap-5">
+              <div
+                class="flex h-14 w-14 items-center justify-center border border-gray-200 bg-[#F8FAFC]"
+              >
+                ★
+              </div>
+
+              <div>
+                <p
+                  class="font-jost text-xs font-semibold uppercase tracking-[0.25em] text-primary"
+                >
+                  100% nöjd kund-garanti
+                </p>
+
+                <p class="mt-2 font-jost text-[#0B1A2B]">
+                  Vi lämnar inte uppdraget förrän du är nöjd.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
 
-        <!-- Höger -->
-        <div class="space-y-10">
-          <div>
-            <h3
-              class="font-jost text-xs font-semibold uppercase tracking-[0.25em] text-white/80"
-            >
-              E-post
-            </h3>
+        <!-- Formulär -->
 
-            <a
-              href="mailto:info@bossbatstad.se"
-              class="mt-3 inline-block font-jost text-lg text-white hover:text-gray-300"
-            >
-              info@bossbatstad.se
-            </a>
+        <form
+            id="contactForm"
+            action="https://formspree.io/f/xbdveglb"
+            method="POST"
+            class="space-y-6"
+        >
+        <input
+        type="hidden"
+        name="_subject"
+        value="Nytt kontaktmeddelande från hemsidan">
+
+        <input
+    type="hidden"
+    name="_next"
+    value="http://127.0.0.1:5500/tack.html">
+
+
+          <div class="grid gap-6 md:grid-cols-2">
+            <div>
+              <label
+                class="mb-2 block font-jost text-xs font-semibold uppercase tracking-[0.2em] text-[#0B1A2B]"
+              >
+                Namn *
+              </label>
+
+              <input
+                type="text"
+                name="name"
+                required
+                minlength="2"
+                autocomplete="name"
+                placeholder="Ditt namn"
+                class="w-full border border-gray-300 px-5 py-4 outline-none transition focus:border-primary"
+              />
+            </div>
+
+            <div>
+              <label
+                class="mb-2 block font-jost text-xs font-semibold uppercase tracking-[0.2em] text-[#0B1A2B]"
+              >
+                E-post *
+              </label>
+
+              <input
+                type="email"
+                name="email"
+                required
+                autocomplete="email"
+                placeholder="exempel@email.se"
+                class="w-full border border-gray-300 px-5 py-4 outline-none transition focus:border-primary"
+              />
+            </div>
+          </div>
+
+          <div class="grid gap-6 md:grid-cols-2">
+            <div>
+              <label
+                class="mb-2 block font-jost text-xs font-semibold uppercase tracking-[0.2em] text-[#0B1A2B]"
+              >
+                Telefon
+              </label>
+
+              <input 
+              type="tel"
+              name="phone"
+              autocomplete="tel"
+              pattern="[0-9+\s()-]{8,20}"
+              placeholder="+46 70 000 00 00"            
+              class="w-full border border-gray-300 px-5 py-4 outline-none
+              transition focus:border-primary"/>
+              
+            </div>
+
+            <div>
+              <label
+                class="mb-2 block font-jost text-xs font-semibold uppercase tracking-[0.2em] text-[#0B1A2B]"
+              >
+                Ärende
+              </label>
+
+              <select
+                name="service"
+                required
+                class="w-full border border-gray-300 px-5 py-4 outline-none transition focus:border-primary"
+              >
+                <option value="" selected disabled>Välj ärende</option>                
+                <option>Båtvård</option>
+                <option>Städservice</option>
+                <option>Offert</option>
+                <option>Övrigt</option>
+              </select>
+            </div>
           </div>
 
           <div>
-            <h3
-              class="font-jost text-xs font-semibold uppercase tracking-[0.25em] text-white/80"
+            <label
+              class="mb-2 block font-jost text-xs font-semibold uppercase tracking-[0.2em] text-[#0B1A2B]"
             >
-              Område
-            </h3>
+              Meddelande *
+            </label>
 
-            <p class="mt-3 font-jost text-lg text-white/80">Västra Götaland</p>
+            <textarea
+            name="message"
+            required
+            minlength="20"
+            rows="7"
+            placeholder="Beskriv vad du behöver hjälp med..."
+              class="w-full border border-gray-300 px-5 py-4 outline-none transition focus:border-primary"
+            ></textarea>
+
           </div>
 
-          <div>
-            <h3
-              class="font-jost text-xs font-semibold uppercase tracking-[0.25em] text-white/80"
+          <div
+            class="flex flex-col items-start justify-between gap-6 md:flex-row md:items-center"
+          >
+            <p class="font-jost text-sm text-gray-500">* Obligatoriska fält</p>
+
+            <button
+              id="submitBtn" type="submit"
+              class="bg-[#0B1A2B] px-10 py-4 font-jost font-semibold uppercase tracking-wider text-white transition hover:bg-[#081320]"
             >
-              Öppettider
-            </h3>
-
-            <p class="mt-3 font-jost leading-8 text-white/80">
-              Måndag–Fredag 08:00–18:00
-              <br />
-              Lördag 09:00–15:00
-            </p>
+              Skicka meddelande
+            </button>
           </div>
+        </form>
+      </div>
+    </section>
 
-          <!-- Fördelar -->
-          <div class="grid gap-4 pt-6 sm:grid-cols-2">
-            <div class="flex items-center gap-3 text-white/80">
-              <span class="text-white/80">✓</span>
-              Fullt försäkrade
-            </div>
+    <section class="bg-[#F8FAFC] py-28">
+      <div class="mx-auto max-w-4xl px-6 text-center">
+        <p
+          class="font-jost text-xs font-semibold uppercase tracking-[0.35em] text-primary"
+        >
+          SNABBARE VÄG
+        </p>
 
-            <div class="flex items-center gap-3 text-white/80">
-              <span class="text-white/80">✓</span>
-              RUT-avdrag
-            </div>
+        <h2 class="mt-5 font-cormorant text-5xl text-[#0B1A2B]">
+          Vill du hellre begära en offert?
+        </h2>
 
-            <div class="flex items-center gap-3 text-white/80">
-              <span class="text-white/80">✓</span>
-              Nöjd kund-garanti
-            </div>
+        <p class="mx-auto mt-6 max-w-2xl font-jost leading-8 text-gray-600">
+          Vårt offertformulär gör det enkelt att välja tjänst och ge oss den
+          information vi behöver för att kunna ge dig ett så exakt pris som
+          möjligt.
+        </p>
 
-            <div class="flex items-center gap-3 text-white/80">
-              <span class="text-white/80">✓</span>
-              8+ års erfarenhet
-            </div>
-          </div>
-        </div>
+        <a
+          href="/offert.html"
+          class="mt-10 inline-flex bg-[#0B1A2B] px-10 py-4 font-jost font-semibold uppercase tracking-wider text-white transition hover:bg-[#081320]"
+        >
+          Begär offert
+        </a>
       </div>
     </section>
     <footer class="bg-[#0B1A2B] text-white">

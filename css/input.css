@@ -1,6 +1,7 @@
 @import "tailwindcss";
 
 
+
 @font-face {
     font-family: "Jost";
     src: url("../fonts/Jost-Regular.woff2") format("woff2");
@@ -94,8 +95,8 @@
     inset: 0;
 
     background: linear-gradient(
-        rgba(8, 18, 32, 0.72),
-        rgba(8, 18, 32, 0.55)
+        rgba(8, 18, 32, 0.90),
+        rgba(8, 18, 32, 0.73)
     );
 }
 

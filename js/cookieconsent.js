@@ -186,3 +186,11 @@ CookieConsent.run({
     }
 
 });
+
+document
+    .getElementById("manageCookies")
+    ?.addEventListener("click", () => {
+
+        CookieConsent.showPreferences();
+
+    });
