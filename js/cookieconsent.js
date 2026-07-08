@@ -151,22 +151,28 @@ CookieConsent.run({
 
     onFirstConsent: ({ cookie }) => {
 
+        console.log("First consent:", cookie);
+    
         if (cookie.categories.includes("analytics")) {
-
+    
             loadClarity();
-
+    
         }
-
+    
     },
 
     onConsent: ({ cookie }) => {
 
+        console.log("Consent:", cookie);
+    
         if (cookie.categories.includes("analytics")) {
-
+    
+            console.log("Analytics accepted");
+    
             loadClarity();
-
+    
         }
-
+    
     },
 
     onChange: ({ changedCategories, cookie }) => {
