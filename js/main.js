@@ -32,93 +32,113 @@ const navbar = document.getElementById("navbar"),
   mobileCtaButton = document.getElementById("mobileCtaButton"),
   serviceLink = document.getElementById("services-link");
 
-function updateNavbar() {
-  if (!menu.classList.contains("translate-x-full")) {
-    return;
+  function updateNavbar() {
+    if (!menu.classList.contains("translate-x-full")) {
+      return;
+    }
+  
+    const isScrolled = window.scrollY > 60;
+  
+    if (isScrolled === navbarScrolled) {
+      return;
+    }
+  
+    navbarScrolled = isScrolled;
+  
+    isScrolled
+      ? (
+        navbar.classList.remove("top-6"),
+        navbar.classList.add("top-0"),
+        navbarContainer.classList.remove("py-6"),
+        navbar.classList.add("py-3", "bg-white", "shadow-xl"),
+        logo.classList.remove("text-white"),
+        logo.classList.add("text-[#0B1A2B]"),
+        navLinks.forEach((t) => {
+          t.classList.remove("text-white"), t.classList.add("text-[#0B1A2B]");
+        }),
+        serviceLink.classList.remove("text-white"),
+        serviceLink.classList.add("text-[#0B1A2B]"),
+        quoteBtn.classList.remove(
+          "bg-transparent",
+          "border-white",
+          "text-white",
+          "hover:bg-gray-200/20"
+        ),
+        quoteBtn.classList.add(
+          "bg-[#0B1A2B]",
+          "text-white",
+          "hover:bg-[#081320]"
+        ),
+        mobileMenu.classList.remove("bg-black/95"),
+        mobileMenu.classList.add("bg-white"),
+        menuButton.classList.remove("text-white"),
+        menuButton.classList.add("text-black"),
+        mobileCtaButton.classList.add("bg-primary")
+        )
+      : (
+        navbar.classList.remove("top-0"),
+        navbar.classList.add("top-6"),
+        navbar.classList.remove("py-3", "bg-white", "shadow-xl"),
+        navbarContainer.classList.add("py-6"),
+        logo.classList.remove("text-[#0B1A2B]"),
+        logo.classList.add("text-white"),
+        navLinks.forEach((t) => {
+          t.classList.remove("text-[#0B1A2B]"), t.classList.add("text-white");
+        }),
+        serviceLink.classList.add("text-white"),
+        serviceLink.classList.remove("text-[#0B1A2B]"),
+        quoteBtn.classList.remove(
+          "border-[#0B1A2B]",
+          "text-[#0B1A2B]",
+          "hover:bg-[#0B1A2B]",
+          "hover:text-white"
+        ),
+        quoteBtn.classList.add(
+          "bg-transparent",
+          "border-white",
+          "text-white",
+          "hover:bg-gray-200/20"
+        ),
+        mobileMenu.classList.add("bg-black/95"),
+        mobileMenu.classList.remove("bg-white"),
+        menuButton.classList.add("text-white"),
+        menuButton.classList.remove("text-black")
+        );
   }
 
-  window.scrollY > 60
-    ? (navbar.classList.remove("top-6"),
-      navbar.classList.add("top-0"),
-      navbarContainer.classList.remove("py-6"),
-      navbar.classList.add("py-3", "bg-white", "shadow-xl"),
-      logo.classList.remove("text-white"),
-      logo.classList.add("text-[#0B1A2B]"),
-      navLinks.forEach((t) => {
-        t.classList.remove("text-white"), t.classList.add("text-[#0B1A2B]");
-      }),
-      serviceLink.classList.remove("text-white"),
-      serviceLink.classList.add("text-[#0B1A2B]"),
-      quoteBtn.classList.remove(
-        "bg-transparent",
-        "border-white",
-        "text-white",
-        "hover:bg-gray-200/20"
-      ),
-      quoteBtn.classList.add(
-        "bg-[#0B1A2B]",
-        "text-white",
-        "hover:bg-[#081320]"
-      ),
-      mobileMenu.classList.remove("bg-black/95"),
-      mobileMenu.classList.add("bg-white"),
-      menuButton.classList.remove("text-white"),
-      menuButton.classList.add("text-black"),
-      mobileCtaButton.classList.add("bg-primary"))
-    : (navbar.classList.remove("top-0"),
-      navbar.classList.add("top-6"),
-      navbar.classList.remove("py-3", "bg-white", "shadow-xl"),
-      navbarContainer.classList.add("py-6"),
-      logo.classList.remove("text-[#0B1A2B]"),
-      logo.classList.add("text-white"),
-      navLinks.forEach((t) => {
-        t.classList.remove("text-[#0B1A2B]"), t.classList.add("text-white");
-      }),
-      serviceLink.classList.add("text-white"),
-      serviceLink.classList.remove("text-[#0B1A2B]"),
-      quoteBtn.classList.remove(
-        "border-[#0B1A2B]",
-        "text-[#0B1A2B]",
-        "hover:bg-[#0B1A2B]",
-        "hover:text-white"
-      ),
-      quoteBtn.classList.add(
-        "bg-transparent",
-        "border-white",
-        "text-white",
-        "hover:bg-gray-200/20"
-      ),
-      mobileMenu.classList.add("bg-black/95"),
-      mobileMenu.classList.remove("bg-white"),
-      menuButton.classList.add("text-white"),
-      menuButton.classList.remove("text-black"));
-}
-updateNavbar(), window.addEventListener("scroll", updateNavbar);
+
+let navbarScrolled = false;
+window.addEventListener("scroll", updateNavbar, { passive: true });
+
 const service = document.getElementById("service");
 const boatFields = document.getElementById("boatFields");
 const boatModel = document.getElementById("boatModel");
 const boatYear = document.getElementById("boatYear");
 
-function toggleBoatFields() {
-  const show =
-    service.value === "boat" || service.value === "both";
 
-  if (show) {
-    boatFields.classList.remove("max-h-0", "opacity-0", "-translate-y-2");
-    boatFields.classList.add("max-h-96", "opacity-100", "translate-y-0");
-  } else {
-    boatFields.classList.remove("max-h-96", "opacity-100", "translate-y-0");
-    boatFields.classList.add("max-h-0", "opacity-0", "-translate-y-2");
-
-    boatModel.value = "";
-    boatYear.value = "";
+if (service && boatFields) {
+  function toggleBoatFields() {
+    const show =
+      service.value === "boat" || service.value === "both";
+  
+    if (show) {
+      boatFields.classList.remove("max-h-0", "opacity-0", "-translate-y-2");
+      boatFields.classList.add("max-h-96", "opacity-100", "translate-y-0");
+    } else {
+      boatFields.classList.remove("max-h-96", "opacity-100", "translate-y-0");
+      boatFields.classList.add("max-h-0", "opacity-0", "-translate-y-2");
+  
+      boatModel.value = "";
+      boatYear.value = "";
+    }
+  
+    boatModel.required = show;
+    boatYear.required = show;
   }
-
-  boatModel.required = show;
-  boatYear.required = show;
+  service.addEventListener("change", toggleBoatFields);
+  toggleBoatFields();
 }
-service.addEventListener("change", toggleBoatFields);
-toggleBoatFields();
+
 
 const track = document.getElementById("gallery-track");
 const slides = track.children;
@@ -140,25 +160,5 @@ document.getElementById("prev-slide").addEventListener("click", () => {
 });
 
 
-
-
-// const form = document.getElementById("contactForm"),
-//   button = document.getElementById("submitBtn");
-
-// form.addEventListener("submit", () => {
-//   (button.disabled = !0), (button.textContent = "Skickar...");
-// }),
-//   document.querySelectorAll("input, textarea, select").forEach((t) => {
-//     t.addEventListener("invalid", () => {
-//       t.validity.valueMissing
-//         ? t.setCustomValidity("Det här fältet måste fyllas i.")
-//         : t.validity.typeMismatch
-//         ? t.setCustomValidity("Ange ett giltigt värde.")
-//         : t.validity.tooShort && t.setCustomValidity("Texten är för kort.");
-//     }),
-//       t.addEventListener("input", () => {
-//         t.setCustomValidity("");
-//       });
-//   });
 
 
