@@ -9,11 +9,20 @@
       name="description"
       content="Professionell båtservice och städservice. Begär en kostnadsfri offert idag."
     />
-    <meta property="og:title" content="BOSS Båt & Städservice">
-    <meta property="og:description" content="Professionell båtvård och städservice i Uppsala Län.">
-    <meta property="og:image" content="https://ubiquitous-trifle-5bc0f9.netlify.app/img/hero.webp">
-    <meta property="og:url" content="https://ubiquitous-trifle-5bc0f9.netlify.app/">
-    <meta property="og:type" content="website">
+    <meta property="og:title" content="BOSS Båt & Städservice" />
+    <meta
+      property="og:description"
+      content="Professionell båtvård och städservice i Uppsala Län."
+    />
+    <meta
+      property="og:image"
+      content="https://ubiquitous-trifle-5bc0f9.netlify.app/img/hero.webp"
+    />
+    <meta
+      property="og:url"
+      content="https://ubiquitous-trifle-5bc0f9.netlify.app/"
+    />
+    <meta property="og:type" content="website" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -121,7 +130,7 @@
 
     <script type="module" src="/js/cookieconsent.js"></script>
   </head>
-  <body>
+  <body class="bg-primary overscroll-y-none">
     <header class="relative h-screen flex flex-col">
       <div
         class="absolute inset-0 bg-cover bg-center bg-black/80 md:bg-black/95 bg-blend-overlay"
@@ -626,12 +635,12 @@
               </li>
               <li class="text-center pb-3 md:pb-0">
                 <a
-                id="services-link"
-                href="services.html"
-                class="mb-4 block font-semibold text-white transition-colors duration-300"
-              >
-                TJÄNSTER
-              </a>
+                  id="services-link"
+                  href="services.html"
+                  class="mb-4 block font-semibold text-white transition-colors duration-300"
+                >
+                  TJÄNSTER
+                </a>
 
                 <div class="flex flex-col gap-4">
                   <a
@@ -778,7 +787,7 @@
       </div>
     </header>
 
-    <section id="tjanster" class="py-24 lg:py-32">
+    <section id="tjanster" class="py-24 lg:py-32 bg-white">
       <div class="mx-auto max-w-7xl px-6">
         <div class="mb-16 flex flex-col items-center text-center">
           <p class="font-jost font-semibold tracking-[0.2em] text-primary">
@@ -826,7 +835,7 @@
                 </p>
 
                 <a
-                  href="#"
+                  href="/batvard.html#polering"
                   class="mt-8 inline-flex items-center gap-2 font-jost text-sm font-semibold uppercase tracking-wider"
                 >
                   Läs mer
@@ -858,7 +867,7 @@
                 </p>
 
                 <a
-                  href="#"
+                  href="/batvard.html#rekond"
                   class="mt-8 inline-flex items-center gap-2 font-jost text-sm font-semibold uppercase tracking-wider"
                 >
                   Läs mer
@@ -904,7 +913,7 @@
                 </p>
 
                 <a
-                  href="#"
+                  href="/stadservice.html#hemstadning"
                   class="mt-8 inline-flex items-center gap-2 font-jost text-sm font-semibold uppercase tracking-wider"
                 >
                   Läs mer
@@ -938,7 +947,7 @@
                 </p>
 
                 <a
-                  href="#"
+                  href="/stadservice.html#stadning-byggnation"
                   class="mt-8 inline-flex items-center gap-2 font-jost text-sm font-semibold uppercase tracking-wider"
                 >
                   Läs mer
@@ -970,7 +979,7 @@
                 </p>
 
                 <a
-                  href="#"
+                  href="/stadservice.html#kontorsstadning"
                   class="mt-8 inline-flex items-center gap-2 font-jost text-sm font-semibold uppercase tracking-wider"
                 >
                   Läs mer
@@ -983,7 +992,7 @@
       </div>
     </section>
 
-    <section id="om-oss" class="py-24">
+    <section id="om-oss" class="py-24 bg-white">
       <div
         class="mx-auto grid max-w-7xl items-stretch gap-16 px-6 lg:grid-cols-2"
       >
@@ -1080,7 +1089,7 @@
         </div>
       </div>
     </section>
-
+    <!-- VÅR PROCESS -->
     <section class="bg-[#0F1C2E] py-28 text-white">
       <div class="mx-auto max-w-7xl px-6">
         <!-- Rubrik -->
@@ -1102,65 +1111,56 @@
         </div>
 
         <!-- Steg -->
-        <div class="mt-24 grid gap-12 md:grid-cols-2 xl:grid-cols-4">
+        <div
+        class="mt-24 flex snap-x snap-mandatory gap-6 overflow-x-auto pb-4 md:grid md:grid-cols-3 md:overflow-visible"
+      >
           <!-- Steg 1 -->
-          <article>
-            <div class="mb-8 flex items-center gap-4">
-              <div class="h-px w-10 bg-primary"></div>
-
-              <span class="font-cormorant text-5xl text-primary"> 1 </span>
-            </div>
-
-            <h3 class="font-jost text-xl font-semibold">Kontakta oss</h3>
-
+          <article
+          class="group w-[85%] flex-shrink-0 snap-center md:w-auto"
+        >
+            <span class="font-jost text-sm uppercase tracking-[0.3em] text-white/40">
+              STEG 01
+            </span>
+          
+            <h3 class="mt-3 font-jost text-2xl font-semibold text-white">
+              Offert
+            </h3>
+          
             <p class="mt-5 font-jost leading-8 text-white/70">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
           </article>
-
           <!-- Steg 2 -->
-          <article>
-            <div class="mb-8 flex items-center gap-4">
-              <div class="h-px w-10 bg-primary"></div>
-
-              <span class="font-cormorant text-5xl text-primary"> 2 </span>
-            </div>
-
-            <h3 class="font-jost text-xl font-semibold">Offert</h3>
-
+          <article
+          class="group w-[85%] flex-shrink-0 snap-center md:w-auto"
+        >
+            <span class="font-jost text-sm uppercase tracking-[0.3em] text-white/40">
+              STEG 02
+            </span>
+          
+            <h3 class="mt-3 font-jost text-2xl font-semibold text-white">
+              Vi utför arbetet
+            </h3>
+          
             <p class="mt-5 font-jost leading-8 text-white/70">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
           </article>
+          
 
           <!-- Steg 3 -->
-          <article>
-            <div class="mb-8 flex items-center gap-4">
-              <div class="h-px w-10 bg-primary"></div>
-
-              <span class="font-cormorant text-5xl text-primary"> 3 </span>
-            </div>
-
-            <h3 class="font-jost text-xl font-semibold">Vi utför arbetet</h3>
-
-            <p class="mt-5 font-jost leading-8 text-white/70">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-          </article>
-
-          <!-- Steg 4 -->
-          <article>
-            <div class="mb-8 flex items-center gap-4">
-              <div class="h-px w-10 bg-primary"></div>
-
-              <span class="font-cormorant text-5xl text-primary"> 4 </span>
-            </div>
-
-            <h3 class="font-jost text-xl font-semibold">Slutförande</h3>
-
+          <article
+  class="group w-[85%] flex-shrink-0 snap-center md:w-auto"
+>
+            <span class="font-jost text-sm uppercase tracking-[0.3em] text-white/40">
+              STEG 03
+            </span>
+          
+            <h3 class="mt-3 font-jost text-2xl font-semibold text-white">
+              Slutförande
+            </h3>
+          
             <p class="mt-5 font-jost leading-8 text-white/70">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -1169,6 +1169,7 @@
         </div>
       </div>
     </section>
+
     <section class="quote-section">
       <div class="quote-overlay"></div>
 
@@ -1189,7 +1190,8 @@
         </p>
       </div>
     </section>
-    <section id="recensioner" class="py-28">
+
+    <section id="recensioner" class="py-28 bg-white">
       <div class="mx-auto max-w-7xl px-6">
         <!-- Rubrik -->
         <div class="mx-auto mb-20 max-w-2xl text-center">
@@ -1335,7 +1337,7 @@
         </div>
       </div>
     </section>
-    <section id="galleri" class="py-32">
+    <section id="galleri" class="py-32 bg-white">
       <div class="mx-auto max-w-7xl px-6">
         <!-- Rubrik -->
         <div class="mx-auto mb-20 max-w-2xl text-center">
@@ -1357,9 +1359,82 @@
           </p>
         </div>
 
-        <!-- Galleri -->
+        <!-- MOBIL -->
+        <div class="relative md:hidden">
+          <div id="gallery-slider" class="overflow-hidden rounded-lg">
+            <div
+              id="gallery-track"
+              class="flex transition-transform duration-500"
+            >
+              <div class="min-w-full">
+                <img
+                  src="/img/hero.webp"
+                  class="h-80 w-full object-cover"
+                  alt=""
+                />
+              </div>
+
+              <div class="min-w-full">
+                <img
+                  src="/img/hero.webp"
+                  class="h-80 w-full object-cover"
+                  alt=""
+                />
+              </div>
+
+              <div class="min-w-full">
+                <img
+                  src="/img/hero.webp"
+                  class="h-80 w-full object-cover"
+                  alt=""
+                />
+              </div>
+
+              <div class="min-w-full">
+                <img
+                  src="/img/hero.webp"
+                  class="h-80 w-full object-cover"
+                  alt=""
+                />
+              </div>
+
+              <div class="min-w-full">
+                <img
+                  src="/img/hero.webp"
+                  class="h-80 w-full object-cover"
+                  alt=""
+                />
+              </div>
+
+              <div class="min-w-full">
+                <img
+                  src="/img/hero.webp"
+                  class="h-80 w-full object-cover"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Knappar -->
+          <button
+            id="prev-slide"
+            class="absolute left-3 top-1/2 -translate-y-1/2 rounded-full bg-white/90 p-3 shadow"
+          >
+            ←
+          </button>
+
+          <button
+            id="next-slide"
+            class="absolute right-3 top-1/2 -translate-y-1/2 rounded-full bg-white/90 p-3 shadow"
+          >
+            →
+          </button>
+        </div>
+
+        <!-- Desktop -->
         <div
-          class="grid auto-rows-62.5 grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-12"
+          class="hidden md:grid auto-rows-62.5 grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-12"
         >
           <!-- Stor vänster -->
           <a
@@ -1444,7 +1519,7 @@
         </div>
       </div>
     </section>
-    <section id="faq" class="py-32">
+    <section id="faq" class="py-32 bg-white">
       <div class="mx-auto max-w-4xl px-6">
         <!-- Rubrik -->
         <div class="mb-20 text-center">
@@ -1556,7 +1631,6 @@
       </div>
     </section>
     <section class="relative overflow-hidden py-40">
-      <!-- Bakgrund -->
       <!-- Bakgrund -->
       <div
         class="absolute inset-0 bg-gradient-to-br from-[#06101C] via-[#0B1A2B] to-[#081625]"
@@ -1680,6 +1754,7 @@
         </div>
       </div>
     </section>
+
     <footer class="bg-[#0B1A2B] text-white">
       <div class="mx-auto max-w-7xl px-6 py-24">
         <div class="grid gap-16 lg:grid-cols-12">
@@ -2126,23 +2201,37 @@
 
             <ul class="space-y-4 font-jost text-white/70">
               <li>
-                <a class="hover:text-white transition" href="/batvard.html#polering">Polering</a>
+                <a
+                  class="hover:text-white transition"
+                  href="/batvard.html#polering"
+                  >Polering</a
+                >
               </li>
               <li>
-                <a class="hover:text-white transition" href="/batvard.html#rekond"
+                <a
+                  class="hover:text-white transition"
+                  href="/batvard.html#rekond"
                   >Rekonditionering</a
                 >
               </li>
               <li>
-                <a class="hover:text-white transition" href="/stadservice.html#hemstadning">Hemstädning</a>
+                <a
+                  class="hover:text-white transition"
+                  href="/stadservice.html#hemstadning"
+                  >Hemstädning</a
+                >
               </li>
               <li>
-                <a class="hover:text-white transition" href="/stadservice.html#stadning-byggnation"
+                <a
+                  class="hover:text-white transition"
+                  href="/stadservice.html#stadning-byggnation"
                   >Städning efter byggnation</a
                 >
               </li>
               <li>
-                <a class="hover:text-white transition" href="/stadservice.html#kontorsstadning"
+                <a
+                  class="hover:text-white transition"
+                  href="/stadservice.html#kontorsstadning"
                   >Kontorsstädning</a
                 >
               </li>
@@ -2169,19 +2258,13 @@
               </li>
 
               <li class="pl-4">
-                <a
-                  class="transition hover:text-white"
-                  href="/batvard.html"
-                >
+                <a class="transition hover:text-white" href="/batvard.html">
                   └ Båtvård
                 </a>
               </li>
 
               <li class="pl-4">
-                <a
-                  class="transition hover:text-white"
-                  href="/stadservice.html"
-                >
+                <a class="transition hover:text-white" href="/stadservice.html">
                   └ Städservice
                 </a>
               </li>
@@ -2231,8 +2314,8 @@
               </div>
 
               <a
-                href="#offert"
-                class="mt-6 inline-flex bg-primary px-8 py-4 font-jost font-semibold uppercase tracking-wider text-white transition hover:opacity-90"
+                href="/offert.html"
+                class="mt-6 inline-flex bg-white px-8 py-4 font-jost font-semibold uppercase tracking-wider text-primary transition hover:opacity-90"
               >
                 Begär offert
               </a>
@@ -2254,12 +2337,9 @@
             >
               Integritetspolicy
             </a>
-            <a
-            href="/cookiepolicy.html"
-            class="hover:text-white transition"
-          >
-            Cookiepolicy
-          </a>
+            <a href="/cookiepolicy.html" class="hover:text-white transition">
+              Cookiepolicy
+            </a>
 
             <button
               id="manageCookies"
