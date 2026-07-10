@@ -4,7 +4,32 @@ const menuButton = document.getElementById("menu-btn"),
   closeIcon = document.getElementById("close-icon"),
   links = document.querySelectorAll(".mobile-link");
 
+  const service = document.getElementById("service");
+  const boatFields = document.getElementById("boatFields");
+  const boatModel = document.getElementById("boatModel");
+  const boatYear = document.getElementById("boatYear");
 
+  function toggleBoatFields() {
+    const show =
+      service.value === "boat" || service.value === "both";
+  
+    if (show) {
+      boatFields.classList.remove("max-h-0", "opacity-0", "-translate-y-2");
+      boatFields.classList.add("max-h-96", "opacity-100", "translate-y-0");
+    } else {
+      boatFields.classList.remove("max-h-96", "opacity-100", "translate-y-0");
+      boatFields.classList.add("max-h-0", "opacity-0", "-translate-y-2");
+  
+      boatModel.value = "";
+      boatYear.value = "";
+    }
+  
+    boatModel.required = show;
+    boatYear.required = show;
+  }
+  service.addEventListener("change", toggleBoatFields);
+toggleBoatFields();
+  
   
 menuButton.addEventListener("click", () => {
   menu.classList.toggle("translate-x-full"),
@@ -112,6 +137,10 @@ document.getElementById("prev-slide").addEventListener("click", () => {
   index = (index - 1 + slides.length) % slides.length;
   updateSlider();
 });
+
+
+
+
 // const form = document.getElementById("contactForm"),
 //   button = document.getElementById("submitBtn");
 
@@ -131,29 +160,4 @@ document.getElementById("prev-slide").addEventListener("click", () => {
 //       });
 //   });
 
-  // const service = document.getElementById("service");
-  // const boatFields = document.getElementById("boatFields");
-  // const boatModel = document.getElementById("boatModel");
-  // const boatYear = document.getElementById("boatYear");
-  
-  // function toggleBoatFields() {
-  //   const show =
-  //     service.value === "boat" || service.value === "both";
-  
-  //   if (show) {
-  //     boatFields.classList.remove("max-h-0", "opacity-0", "-translate-y-2");
-  //     boatFields.classList.add("max-h-96", "opacity-100", "translate-y-0");
-  //   } else {
-  //     boatFields.classList.remove("max-h-96", "opacity-100", "translate-y-0");
-  //     boatFields.classList.add("max-h-0", "opacity-0", "-translate-y-2");
-  
-  //     boatModel.value = "";
-  //     boatYear.value = "";
-  //   }
-  
-  //   boatModel.required = show;
-  //   boatYear.required = show;
-  // }
-  
-  // service.addEventListener("change", toggleBoatFields);
-  // toggleBoatFields();
+
