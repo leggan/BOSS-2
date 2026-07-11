@@ -35,16 +35,33 @@
     <!-- CSS -->
     
     <link rel="stylesheet" href="/css/output.css" />
-
+    <!-- CookieConsent CSS -->
     <link
-      rel="stylesheet"
+      rel="preload"
       href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.1.0/dist/cookieconsent.css"
-    />
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    >
+
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.1.0/dist/cookieconsent.css"
+      >
+    </noscript>
+
+    <!-- CookieConsent-biblioteket -->
+    <script
+      src="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.1.0/dist/cookieconsent.umd.js"
+      defer
+    ></script>
+
+    <script src="/js/cookieconsent.js" defer></script>           
+
 
     <!-- JS -->
     <script src="/js/main.js" defer></script>
 
-    <script type="module" src="/js/cookieconsent.js"></script>
   </head>
   <body>
     <header class="relative h-[60vh] min-h-[420px] max-h-[600px] flex flex-col">
