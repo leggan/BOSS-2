@@ -109,6 +109,13 @@
       }
     </script>
     <!-- CSS -->
+    <link 
+  rel="preload" 
+  href="/fonts/Cormorant-Regular.woff2" 
+  as="font" 
+  type="font/woff2" 
+  crossorigin
+>
     <link rel="stylesheet" href="/css/output.css" />
 
     <!-- JS -->
@@ -128,7 +135,7 @@
       />
     </noscript>
 
-    <script type="module" src="/js/cookieconsent.js"></script>
+    <script src="/js/cookieconsent.js" defer></script>  
   </head>
   <body class="bg-primary overscroll-y-none">
     <header class="relative h-screen flex flex-col">
@@ -585,7 +592,7 @@
             BEGÄR OFFERT
           </a>
           <!-- HAMBURGERMENY -->
-          <button id="menu-btn" class="relative z-50 md:hidden text-white">
+          <button aria-label="Öppna meny" id="menu-btn" class="relative z-50 md:hidden text-white">
             <svg
               id="menu-icon"
               xmlns="http://www.w3.org/2000/svg"
